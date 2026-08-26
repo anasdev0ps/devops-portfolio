@@ -109,24 +109,25 @@
         }
 
         .role-title {
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             font-weight: 700;
             color: var(--accent);
             letter-spacing: -0.01em;
         }
 
-        /* Symmetrical Contact Bar */
+        /* Symmetrical Single-Line Contact Bar */
         .contact-ribbon {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
             align-items: center;
-            gap: 0.5rem 1rem;
             background: var(--bg-subtle);
             border: 1px solid var(--border-light);
             border-radius: 6px;
             padding: 0.5rem 0.85rem;
             margin-bottom: 1rem;
             font-size: 0.85rem;
+            white-space: nowrap;
         }
 
         .contact-link {
@@ -376,6 +377,9 @@
                 background: #f8fafc !important;
                 border: 1px solid #e2e8f0 !important;
                 padding: 0.35rem 0.6rem !important;
+                flex-wrap: nowrap !important;
+                justify-content: space-between !important;
+                white-space: nowrap !important;
             }
 
             .skills-table {
@@ -425,12 +429,16 @@
                 <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
             </a>
             <span class="contact-divider">&bull;</span>
+            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-link">
+                <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
+            </a>
+            <span class="contact-divider">&bull;</span>
             <span class="contact-link">
                 <i class="fa-solid fa-phone"></i> +92 317 694 7473
             </span>
             <span class="contact-divider">&bull;</span>
             <span class="contact-link">
-                <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan (Open to Relocation to Abu Dhabi, UAE)
+                <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan (Open to Relocate)
             </span>
         </div>
 
