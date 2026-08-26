@@ -6,7 +6,8 @@
 
 [![Email](https://img.shields.io/badge/Email-anas.devops%40hotmail.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:anas.devops@hotmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-devanasops-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/devanasops)
-[![GitHub Pages](https://img.shields.io/badge/Live_Showcase-Portfolio_Hub-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://devanasops.github.io/devops-portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-anasdev0ps-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anasdev0ps)
+[![Live Portfolio](https://img.shields.io/badge/Live_Showcase-Portfolio_Hub-2563EB?style=for-the-badge&logo=github-pages&logoColor=white)](https://anasdev0ps.github.io/devops-portfolio/)
 
 <br/>
 
@@ -153,11 +154,11 @@ python3 -m http.server 8080
 ```
 
 ### 2. GitHub Pages Deployment
-1. Push this repository to GitHub.
-2. Navigate to **Settings** > **Pages**.
-3. Under **Build and deployment** > **Source**, select `Deploy from a branch`.
-4. Choose branch `main` (or `master`) and directory `/ (root)`.
-5. Click **Save**. Your live showcase will be active at `https://<your-username>.github.io/<repo-name>/`.
+1. Navigate to **Settings** > **Pages** in this repository (`anasdev0ps/devops-portfolio`).
+2. Under **Build and deployment** > **Source**, select `Deploy from a branch`.
+3. Choose branch `main` and directory `/ (root)`.
+4. Click **Save**. Your live showcase will be available at:  
+   **`https://anasdev0ps.github.io/devops-portfolio/`**
 
 ---
 
@@ -165,6 +166,7 @@ python3 -m http.server 8080
 
 * **Candidate Name:** Anas Khan
 * **Universal Email:** [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com)
+* **GitHub:** [github.com/anasdev0ps](https://github.com/anasdev0ps)
 * **LinkedIn:** [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops)
 * **Phone:** `+92 317 694 7473`
 * **Location:** Lahore, Pakistan &bull; Available for Remote & Global Opportunities
