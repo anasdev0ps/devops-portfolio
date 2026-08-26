@@ -36,11 +36,7 @@
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -140,14 +136,8 @@
             transition: color 0.2s ease;
         }
 
-        .contact-item:hover {
-            color: #60a5fa;
-        }
-
-        .contact-item i {
-            color: var(--accent-cyan);
-            font-size: 1rem;
-        }
+        .contact-item:hover { color: #60a5fa; }
+        .contact-item i { color: var(--accent-cyan); font-size: 1rem; }
 
         .tech-pill-container {
             display: flex;
@@ -178,14 +168,9 @@
             transform: translateY(-1px);
         }
 
-        .tech-pill i {
-            font-size: 0.95rem;
-        }
+        .tech-pill i { font-size: 0.95rem; }
 
-        main {
-            flex: 1;
-            padding: 3.5rem 0 4rem;
-        }
+        main { flex: 1; padding: 3.5rem 0 4rem; }
 
         .section-header {
             display: flex;
@@ -205,19 +190,14 @@
             gap: 0.65rem;
         }
 
-        .section-title i {
-            color: var(--accent-blue);
-        }
-
-        .section-subtitle {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
+        .section-title i { color: var(--accent-blue); }
+        .section-subtitle { font-size: 0.9rem; color: var(--text-muted); }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
             gap: 1.75rem;
+            margin-bottom: 3.5rem;
         }
 
         .card {
@@ -234,9 +214,15 @@
         }
 
         .card.featured {
-            border-color: var(--accent-azure);
+            border-color: #0078d4;
             background: linear-gradient(180deg, rgba(22, 31, 51, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
-            box-shadow: 0 0 20px rgba(0, 120, 212, 0.15);
+            box-shadow: 0 0 20px rgba(0, 120, 212, 0.2);
+        }
+
+        .card.targeted {
+            border-color: #10b981;
+            background: linear-gradient(180deg, rgba(22, 31, 51, 0.95) 0%, rgba(6, 78, 59, 0.3) 100%);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
         }
 
         .card:hover {
@@ -258,9 +244,8 @@
             margin-bottom: 0.75rem;
         }
 
-        .card-tag.gold {
-            color: #38bdf8;
-        }
+        .card-tag.emerald { color: #34d399; }
+        .card-tag.gold { color: #38bdf8; }
 
         .card-title {
             font-size: 1.25rem;
@@ -325,10 +310,15 @@
             border: 1px solid transparent;
         }
 
-        .btn-primary:hover {
-            background-color: #1d4ed8;
+        .btn-primary:hover { background-color: #1d4ed8; color: #ffffff; }
+
+        .btn-emerald {
+            background-color: #059669;
             color: #ffffff;
+            border: 1px solid transparent;
         }
+
+        .btn-emerald:hover { background-color: #047857; color: #ffffff; }
 
         .btn-secondary {
             background-color: transparent;
@@ -351,14 +341,8 @@
             font-size: 0.85rem;
         }
 
-        footer a {
-            color: var(--text-secondary);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffffff;
-        }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: #ffffff; }
     </style>
 </head>
 <body>
@@ -412,10 +396,47 @@
 
 <main>
     <div class="container">
+        
+        <!-- TARGETED APPLICATIONS SECTION -->
         <div class="section-header">
             <div>
-                <h2 class="section-title"><i class="fa-solid fa-id-card-clip"></i> Resume Profiles & Tailored Showcase</h2>
-                <p class="section-subtitle">Interactive web resumes, downloadable PDFs, and source markdown versions</p>
+                <h2 class="section-title"><i class="fa-solid fa-crosshairs"></i> Targeted Custom Job Resumes</h2>
+                <p class="section-subtitle">Tailored, ATS-optimized profiles configured for specific job descriptions and opportunities</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Abu Dhabi DevSecOps Card -->
+            <div class="card targeted">
+                <div>
+                    <div class="card-tag emerald"><i class="fa-solid fa-bullseye"></i> Targeted Opening (Abu Dhabi, UAE)</div>
+                    <h3 class="card-title">Senior DevSecOps & CI/CD Engineer</h3>
+                    <p class="card-desc">Custom tailored for the Abu Dhabi DevSecOps CI/CD opening (IDC Technologies). Emphasizes Azure DevOps & Jenkins pipelines, Ansible automation, Kubernetes, SAST/DAST/SCA security integration (Fortify, Black Duck, SonarQube), Prometheus/Grafana/ELK, and UAE Gov delivery track record.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                        <span class="card-skill-badge"><i class="devicon-jenkins-line"></i> Jenkins</span>
+                        <span class="card-skill-badge"><i class="devicon-ansible-plain"></i> Ansible</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
+                        <span class="card-skill-badge"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> ELK Stack</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-check-double"></i> AzureProof SOC 2</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_Khan_DevSecOps_CICD_Engineer_AbuDhabi.html" class="btn btn-emerald"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_Khan_DevSecOps_CICD_Engineer_AbuDhabi.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MASTER CAREER PROFILES SECTION -->
+        <div class="section-header">
+            <div>
+                <h2 class="section-title"><i class="fa-solid fa-id-card-clip"></i> Master Resumes & Showcase Profiles</h2>
+                <p class="section-subtitle">Comprehensive career versions across Cloud, SRE, DevOps, and Infrastructure progression</p>
             </div>
         </div>
 
