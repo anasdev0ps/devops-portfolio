@@ -1,6 +1,6 @@
 # Anas Khan
 **Senior CI/CD DevOps Engineer | Kubernetes, OpenShift & GitOps Specialist**  
-Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 317 694 7473 | Utrecht, Netherlands & Remote
+Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 317 694 7473 | Lahore, Pakistan (Open to Relocation)
 
 ---
 

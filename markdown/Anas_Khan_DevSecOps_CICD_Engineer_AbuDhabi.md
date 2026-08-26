@@ -1,6 +1,6 @@
 # Anas Khan
 **Senior DevSecOps & CI/CD Engineer | Multi-Cloud & Security Automation**  
-Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | LinkedIn: [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops) | Phone: +92 317 694 7473 | Abu Dhabi, UAE & Remote
+Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | LinkedIn: [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops) | Phone: +92 317 694 7473 | Lahore, Pakistan (Open to Relocation)
 
 ---
 
