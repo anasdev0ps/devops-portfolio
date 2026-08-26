@@ -20,7 +20,7 @@
             --accent: #0066cc;        /* Executive Tech Blue */
             --accent-light: #0284c7;  /* Cyan/Azure */
             --text-main: #1e293b;     /* High contrast body text */
-            --text-muted: #475569;    /* Secondary text */
+            --text-muted: #334155;    /* Secondary text */
             --text-light: #64748b;    /* Metadata / dates */
             --border: #cbd5e1;        /* Crisp border */
             --border-light: #e2e8f0;
@@ -90,26 +90,26 @@
         /* Header */
         header {
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 1.4rem;
-            margin-bottom: 1.6rem;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.4rem;
         }
 
         .header-title-block {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.6rem;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.15rem;
             font-weight: 800;
             color: var(--primary);
             letter-spacing: -0.03em;
             line-height: 1.15;
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.3rem;
             text-transform: uppercase;
         }
 
         .role-title {
-            font-size: 1.08rem;
+            font-size: 1.05rem;
             font-weight: 700;
             color: var(--accent);
             letter-spacing: -0.01em;
@@ -124,8 +124,8 @@
             background: var(--bg-subtle);
             border: 1px solid var(--border-light);
             border-radius: 6px;
-            padding: 0.55rem 0.9rem;
-            margin-bottom: 1.1rem;
+            padding: 0.5rem 0.85rem;
+            margin-bottom: 1rem;
             font-size: 0.85rem;
         }
 
@@ -154,15 +154,15 @@
         }
 
         .summary-text {
-            font-size: 0.92rem;
+            font-size: 0.91rem;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.55;
             text-align: justify;
         }
 
         /* Sections */
         section {
-            margin-bottom: 1.75rem;
+            margin-bottom: 1.5rem;
         }
 
         section:last-child {
@@ -170,46 +170,50 @@
         }
 
         .section-heading {
-            font-size: 1rem;
+            font-size: 0.98rem;
             font-weight: 800;
             color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.05em;
             border-bottom: 1.5px solid var(--border);
-            padding-bottom: 0.35rem;
-            margin-bottom: 1.1rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.95rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            break-after: avoid;
+            page-break-after: avoid;
         }
 
         .section-heading i {
             color: var(--accent);
-            font-size: 0.95rem;
+            font-size: 0.92rem;
         }
 
         /* Skills Matrix */
         .skills-table {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
+            gap: 0.65rem;
             margin-bottom: 0.5rem;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
 
         .skill-cell {
             background: var(--bg-subtle);
             border: 1px solid var(--border-light);
             border-radius: 6px;
-            padding: 0.65rem 0.85rem;
+            padding: 0.6rem 0.8rem;
         }
 
         .skill-cell-title {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
             letter-spacing: 0.03em;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.35rem;
             display: flex;
             align-items: center;
             gap: 0.4rem;
@@ -217,13 +221,13 @@
 
         .skill-cell-title i {
             color: var(--accent-light);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.35rem;
+            gap: 0.3rem;
         }
 
         .skill-tag {
@@ -232,21 +236,23 @@
             gap: 0.3rem;
             background: #ffffff;
             border: 1px solid var(--border);
-            padding: 0.15rem 0.45rem;
+            padding: 0.15rem 0.42rem;
             border-radius: 4px;
-            font-size: 0.76rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: var(--text-main);
             font-family: 'JetBrains Mono', monospace;
         }
 
         .skill-tag i {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
         }
 
         /* Experience */
         .experience-item {
-            margin-bottom: 1.45rem;
+            margin-bottom: 1.35rem;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
 
         .experience-item:last-child {
@@ -257,13 +263,13 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.3rem;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
 
         .exp-role-company {
-            font-size: 1rem;
+            font-size: 0.98rem;
             color: var(--primary);
         }
 
@@ -277,12 +283,12 @@
         }
 
         .exp-meta {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 600;
             color: var(--text-light);
             font-family: 'JetBrains Mono', monospace;
             background: var(--bg-pill);
-            padding: 0.15rem 0.55rem;
+            padding: 0.15rem 0.5rem;
             border-radius: 4px;
             border: 1px solid var(--border-light);
         }
@@ -295,10 +301,10 @@
         .bullet-list li {
             position: relative;
             padding-left: 1.15rem;
-            margin-bottom: 0.4rem;
-            font-size: 0.89rem;
+            margin-bottom: 0.35rem;
+            font-size: 0.88rem;
             color: var(--text-muted);
-            line-height: 1.55;
+            line-height: 1.5;
         }
 
         .bullet-list li::before {
@@ -306,7 +312,7 @@
             position: absolute;
             left: 0.1rem;
             color: var(--accent);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             line-height: 1.5;
         }
 
@@ -322,23 +328,25 @@
             align-items: baseline;
             flex-wrap: wrap;
             gap: 0.5rem;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
 
         .edu-degree {
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             font-weight: 700;
             color: var(--primary);
         }
 
         .edu-institution {
-            font-size: 0.88rem;
+            font-size: 0.86rem;
             color: var(--text-muted);
         }
 
-        /* STRICT ZERO-MARGIN PRINT RULES (Kills browser date/time headers & URL footers) */
+        /* STRICT PAGED MEDIA RULES (Zero touching, proper breathing room on Page 1 & Page 2) */
         @page {
             size: A4 portrait;
-            margin: 0 !important;
+            margin: 12mm 14mm 14mm 14mm;
         }
 
         @media print {
@@ -346,7 +354,7 @@
                 background: #ffffff !important;
                 padding: 0 !important;
                 margin: 0 !important;
-                font-size: 9.6pt !important;
+                font-size: 9.3pt !important;
                 color: #000000 !important;
                 width: 100% !important;
             }
@@ -354,7 +362,7 @@
             .resume-wrapper {
                 box-shadow: none !important;
                 border: none !important;
-                padding: 12mm 14mm !important;
+                padding: 0 !important;
                 margin: 0 !important;
                 max-width: 100% !important;
                 border-radius: 0 !important;
@@ -371,25 +379,26 @@
             }
 
             .skills-table {
-                gap: 0.45rem !important;
+                gap: 0.4rem !important;
             }
 
             .skill-cell {
-                padding: 0.4rem 0.6rem !important;
+                padding: 0.35rem 0.55rem !important;
             }
 
             section {
                 margin-bottom: 1.1rem !important;
-                page-break-inside: auto;
             }
 
             .experience-item {
-                margin-bottom: 0.95rem !important;
-                page-break-inside: avoid;
+                margin-bottom: 0.85rem !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
             }
 
             .skills-table {
-                page-break-inside: avoid;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
             }
         }
     </style>
@@ -399,8 +408,8 @@
 <div class="resume-wrapper">
     <!-- Action Toolbar (Hidden during print) -->
     <div class="top-toolbar">
-        <button class="action-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Resume</button>
-        <a href="../pdf/Anas_Khan_Senior_DevOps_Kubernetes_GitOps_Netherlands.pdf" class="action-btn" download><i class="fa-solid fa-file-pdf"></i> Direct Download PDF</a>
+        <button class="action-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save PDF</button>
+        <a href="../pdf/Anas_Khan_Senior_DevOps_Kubernetes_GitOps_Netherlands.pdf" class="action-btn" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
         <a href="../index.html" class="action-btn"><i class="fa-solid fa-arrow-left"></i> Portfolio Hub</a>
     </div>
 
@@ -414,6 +423,10 @@
         <div class="contact-ribbon">
             <a href="mailto:anas.devops@hotmail.com" class="contact-link">
                 <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
+            </a>
+            <span class="contact-divider">&bull;</span>
+            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-link">
+                <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
             </a>
             <span class="contact-divider">&bull;</span>
             <span class="contact-link">
@@ -509,7 +522,7 @@
                 <span class="exp-meta">Sep 2025 – Present &bull; Remote / Hybrid</span>
             </div>
             <ul class="bullet-list">
-                <li>Architect and operate enterprise CI/CD and container delivery pipelines for high-profile government and commercial platforms (**DGE-Mawaheb**, **Takafo**, **Muqabla**).</li>
+                <li>Architect and operate enterprise CI/CD and container delivery pipelines for high-profile government and commercial platforms (<strong>DGE-Mawaheb</strong>, <strong>Takafo</strong>, <strong>Muqabla</strong>).</li>
                 <li>Engineered multi-stage <strong>Azure DevOps</strong> and <strong>GitHub Actions</strong> CI/CD workflows with automated Docker container builds, environment validation gates, and zero-downtime rollback controls, shipping releases in under 10 minutes.</li>
                 <li>Designed High-Level Architecture (HLD) with secure network isolation, Kubernetes services, Private Endpoints, Redis caching, and Azure Key Vault integration.</li>
                 <li>Unified full-stack observability with Prometheus, Grafana, and Log Analytics, <strong>reducing production MTTR by 60%</strong>.</li>
@@ -541,9 +554,9 @@
                 <span class="exp-meta">Mar 2022 – Oct 2024 &bull; Remote</span>
             </div>
             <ul class="bullet-list">
-                <li><strong>Kubernetes & GitOps:</strong> Automated Kubernetes cluster provisioning on Hetzner Cloud using **ArgoCD GitOps**, **reducing deployment times from 4 hours to under 20 minutes**.</li>
-                <li><strong>Cloud-Native Database Operators:</strong> Deployed and managed Kubernetes operators including **CloudNativePG** and MariaDB operator; architected zero-downtime Patroni PostgreSQL and Galera MariaDB clusters sustaining **99.95% database availability**.</li>
-                <li><strong>Infrastructure as Code:</strong> Authored modular **Ansible playbooks** automating multi-node Kubernetes cluster bootstrapping, OS hardening, and automated Prometheus/Grafana monitoring rollouts across 15+ nodes.</li>
+                <li><strong>Kubernetes & GitOps:</strong> Automated Kubernetes cluster provisioning on Hetzner Cloud using <strong>ArgoCD GitOps</strong>, <strong>reducing deployment times from 4 hours to under 20 minutes</strong>.</li>
+                <li><strong>Cloud-Native Database Operators:</strong> Deployed and managed Kubernetes operators including <strong>CloudNativePG</strong> and MariaDB operator; architected zero-downtime Patroni PostgreSQL and Galera MariaDB clusters sustaining <strong>99.95% database availability</strong>.</li>
+                <li><strong>Infrastructure as Code:</strong> Authored modular <strong>Ansible playbooks</strong> automating multi-node Kubernetes cluster bootstrapping, OS hardening, and automated Prometheus/Grafana monitoring rollouts across 15+ nodes.</li>
                 <li>Configured Ingress controllers, TLS cert-manager, network policies, and persistent volume storage across production clusters.</li>
             </ul>
         </div>
@@ -557,8 +570,8 @@
                 <span class="exp-meta">Aug 2023 – Feb 2025 &bull; Remote (Canada)</span>
             </div>
             <ul class="bullet-list">
-                <li>Modernized legacy monolithic architectures to containerized microservices on modern Ubuntu and GCP infrastructure, **improving system throughput by 50%**.</li>
-                <li>Optimized 8+ CI/CD pipelines, **cutting pipeline execution runtimes from 18 to 7 minutes**; automated integration test suites and compliance controls.</li>
+                <li>Modernized legacy monolithic architectures to containerized microservices on modern Ubuntu and GCP infrastructure, <strong>improving system throughput by 50%</strong>.</li>
+                <li>Optimized 8+ CI/CD pipelines, <strong>cutting pipeline execution runtimes from 18 to 7 minutes</strong>; automated integration test suites and compliance controls.</li>
                 <li>Administered GCP monitoring and distributed database upgrades with zero downtime.</li>
             </ul>
         </div>
@@ -573,7 +586,7 @@
             </div>
             <ul class="bullet-list">
                 <li>Administered VMware ESXi physical hypervisor infrastructure and containerized engineering environments across 20+ virtual nodes.</li>
-                <li>Automated host provisioning with Ansible, **reducing deployment setup times from 3 hours to 15 minutes**.</li>
+                <li>Automated host provisioning with Ansible, <strong>reducing deployment setup times from 3 hours to 15 minutes</strong>.</li>
                 <li>Managed continuous build integrations on TeamCity with zero pipeline disruption.</li>
             </ul>
         </div>
@@ -587,7 +600,7 @@
                 <span class="exp-meta">Feb 2021 – May 2022 &bull; Remote</span>
             </div>
             <ul class="bullet-list">
-                <li>Designed end-to-end CI/CD delivery pipelines using **Jenkins** and **GitLab**, automating build, containerization, and deployment stages.</li>
+                <li>Designed end-to-end CI/CD delivery pipelines using <strong>Jenkins</strong> and <strong>GitLab</strong>, automating build, containerization, and deployment stages.</li>
                 <li>Dockerized 5+ enterprise applications and established centralized ELK Stack observability.</li>
             </ul>
         </div>
