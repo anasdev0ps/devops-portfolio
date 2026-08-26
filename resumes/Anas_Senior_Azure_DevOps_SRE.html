@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anas - Senior Azure Cloud Engineer & SRE Resume</title>
+    <title>Anas Khan - Senior Azure Cloud Engineer & SRE Resume</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         :root {
             --primary: #0f172a;
             --primary-light: #1e293b;
-            --accent: #0078d4; /* Microsoft Azure Blue */
+            --accent: #0078d4;
             --accent-dark: #005a9e;
             --accent-cyan: #0284c7;
             --accent-emerald: #059669;
@@ -29,11 +29,7 @@
             --tag-bg: #f1f5f9;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -77,24 +73,12 @@
             transition: all 0.2s ease;
         }
 
-        .action-btn:hover {
-            background: var(--accent);
-            color: #ffffff;
-            border-color: var(--accent);
-        }
+        .action-btn:hover { background: var(--accent); color: #ffffff; border-color: var(--accent); }
 
         .header {
             border-bottom: 2px solid var(--border-color);
-            padding-bottom: 1.75rem;
-            margin-bottom: 2rem;
-        }
-
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 1rem;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
         }
 
         .name-title h1 {
@@ -103,57 +87,49 @@
             color: var(--primary);
             letter-spacing: -0.03em;
             line-height: 1.1;
+            margin-bottom: 0.3rem;
         }
 
         .name-title .role {
             font-size: 1.12rem;
             font-weight: 600;
             color: var(--accent);
-            margin-top: 0.35rem;
             letter-spacing: -0.01em;
+            margin-bottom: 0.85rem;
         }
 
-        .contact-info {
+        .contact-bar {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 0.35rem;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.6rem 1.1rem;
             font-size: 0.88rem;
             color: var(--text-muted);
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.55rem 0.9rem;
+            margin-bottom: 1.15rem;
         }
 
         .contact-item {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.45rem;
             text-decoration: none;
             color: var(--text-muted);
+            font-weight: 500;
+            transition: color 0.2s ease;
         }
 
-        .contact-item:hover {
-            color: var(--accent);
-        }
+        .contact-item:hover { color: var(--accent); }
+        .contact-item i { color: var(--accent); font-size: 0.95rem; display: inline-flex; align-items: center; }
+        .contact-sep { color: #cbd5e1; font-weight: bold; }
 
-        .contact-item i {
-            color: var(--accent-cyan);
-            width: 16px;
-            text-align: center;
-        }
+        .summary-text { font-size: 0.93rem; color: var(--text-muted); line-height: 1.6; }
 
-        .summary-text {
-            font-size: 0.94rem;
-            color: var(--text-muted);
-            margin-top: 1.25rem;
-            line-height: 1.6;
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
-        }
+        .section { margin-bottom: 2rem; }
+        .section:last-child { margin-bottom: 0; }
 
         .section-title {
             font-size: 1.1rem;
@@ -169,189 +145,42 @@
             gap: 0.55rem;
         }
 
-        .section-title i {
-            color: var(--accent);
-            font-size: 1rem;
-        }
+        .section-title i { color: var(--accent); font-size: 1rem; }
 
-        /* Skills Matrix */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.85rem;
-            margin-bottom: 0.5rem;
-        }
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; margin-bottom: 0.5rem; }
+        .skill-group { background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem 1rem; }
+        .skill-group-title { font-size: 0.82rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem; }
+        .skill-group-title i { color: var(--accent-cyan); }
+        .skill-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+        .skill-pill { display: inline-flex; align-items: center; gap: 0.3rem; background: #ffffff; border: 1px solid #cbd5e1; padding: 0.18rem 0.5rem; border-radius: 4px; font-size: 0.76rem; font-weight: 500; color: var(--text-dark); font-family: 'JetBrains Mono', monospace; }
+        .skill-pill i { font-size: 0.82rem; }
 
-        .skill-group {
-            background: var(--bg-light);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 0.75rem 1rem;
-        }
+        .job-item { margin-bottom: 1.75rem; position: relative; }
+        .job-item:last-child { margin-bottom: 0; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.3rem; flex-wrap: wrap; gap: 0.5rem; }
+        .job-role { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
+        .job-company { font-weight: 600; color: var(--accent); }
+        .job-date { font-size: 0.82rem; font-weight: 600; color: var(--text-light); font-family: 'JetBrains Mono', monospace; background: var(--tag-bg); padding: 0.15rem 0.5rem; border-radius: 4px; }
+        .job-bullets { list-style-type: none; margin-top: 0.5rem; }
+        .job-bullets li { position: relative; padding-left: 1.2rem; margin-bottom: 0.45rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; }
+        .job-bullets li::before { content: "•"; position: absolute; left: 0.2rem; color: var(--accent); font-weight: bold; font-size: 1.1rem; line-height: 1.2; }
+        .job-bullets strong { color: var(--primary); }
 
-        .skill-group-title {
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            margin-bottom: 0.4rem;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
+        .edu-item { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; }
+        .edu-title { font-size: 0.98rem; font-weight: 700; color: var(--primary); }
+        .edu-sub { font-size: 0.88rem; color: var(--text-muted); }
 
-        .skill-group-title i {
-            color: var(--accent-cyan);
-        }
-
-        .skill-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.35rem;
-        }
-
-        .skill-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            background: #ffffff;
-            border: 1px solid #cbd5e1;
-            padding: 0.18rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.76rem;
-            font-weight: 500;
-            color: var(--text-dark);
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .skill-pill i {
-            font-size: 0.82rem;
-        }
-
-        /* Timeline / Experience */
-        .job-item {
-            margin-bottom: 1.75rem;
-            position: relative;
-        }
-
-        .job-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.3rem;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .job-role {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .job-company {
-            font-weight: 600;
-            color: var(--accent);
-        }
-
-        .job-date {
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: var(--text-light);
-            font-family: 'JetBrains Mono', monospace;
-            background: var(--tag-bg);
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-        }
-
-        .job-bullets {
-            list-style-type: none;
-            margin-top: 0.5rem;
-        }
-
-        .job-bullets li {
-            position: relative;
-            padding-left: 1.2rem;
-            margin-bottom: 0.45rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.55;
-        }
-
-        .job-bullets li::before {
-            content: "•";
-            position: absolute;
-            left: 0.2rem;
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.1rem;
-            line-height: 1.2;
-        }
-
-        .job-bullets strong {
-            color: var(--primary);
-        }
-
-        .edu-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .edu-title {
-            font-size: 0.98rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .edu-sub {
-            font-size: 0.88rem;
-            color: var(--text-muted);
-        }
-
-        /* Print Media Styles */
         @media print {
-            body {
-                background: #ffffff !important;
-                padding: 0 !important;
-                color: #000000 !important;
-            }
-
-            .resume-container {
-                box-shadow: none !important;
-                border: none !important;
-                padding: 0 !important;
-                max-width: 100% !important;
-            }
-
-            .top-toolbar {
-                display: none !important;
-            }
-
-            .section {
-                page-break-inside: auto;
-            }
-
-            .job-item {
-                page-break-inside: avoid;
-            }
-
-            .skill-group {
-                page-break-inside: avoid;
-            }
+            body { background: #ffffff !important; padding: 0 !important; color: #000000 !important; }
+            .resume-container { box-shadow: none !important; border: none !important; padding: 0 !important; max-width: 100% !important; }
+            .top-toolbar { display: none !important; }
+            .contact-bar { background: #f8fafc !important; border: 1px solid #e2e8f0 !important; }
+            .section { page-break-inside: auto; }
+            .job-item { page-break-inside: avoid; }
+            .skill-group { page-break-inside: avoid; }
         }
 
-        @page {
-            size: A4;
-            margin: 15mm 15mm 15mm 15mm;
-        }
+        @page { size: A4; margin: 15mm 15mm 15mm 15mm; }
     </style>
 </head>
 <body>
@@ -364,23 +193,29 @@
     </div>
 
     <header class="header">
-        <div class="header-top">
-            <div class="name-title">
-                <h1>Anas</h1>
-                <div class="role">Senior Azure Cloud Engineer | DevOps & SRE | Microsoft Entra Administration</div>
-            </div>
-            <div class="contact-info">
-                <a href="mailto:anas.devops@hotmail.com" class="contact-item">
-                    <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
-                </a>
-                <span class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i> Multi-Region / Remote & Hybrid
-                </span>
-                <span class="contact-item">
-                    <i class="devicon-azure-plain"></i> Microsoft Azure &bull; Entra ID &bull; SRE &bull; Landing Zones
-                </span>
-            </div>
+        <div class="name-title">
+            <h1>Anas Khan</h1>
+            <div class="role">Senior Azure Cloud Engineer | DevOps & SRE | Microsoft Entra Administration</div>
         </div>
+
+        <div class="contact-bar">
+            <a href="mailto:anas.devops@hotmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
+            </a>
+            <span class="contact-sep">&bull;</span>
+            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-item">
+                <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
+            </a>
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
+                <i class="fa-solid fa-phone"></i> +92 317 694 7473
+            </span>
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
+                <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan (Remote & Global)
+            </span>
+        </div>
+
         <p class="summary-text">
             Senior DevOps & Azure Cloud Engineer with 5+ years of experience architecting, securing, and operating enterprise-grade cloud environments across Azure, AWS, and GCP. Proven track record leading hybrid-cloud migrations, building automated Azure DevOps and GitHub Actions CI/CD pipelines, managing Kubernetes workloads, and enforcing zero-trust security across multi-tenant government and commercial ecosystems. Deep specialization in Microsoft Entra ID (Azure AD), Azure Landing Zones, SRE observability, and compliance automation.
         </p>
@@ -561,7 +396,7 @@
         <div class="edu-item">
             <div>
                 <div class="edu-title">BS in Software Engineering</div>
-                <div class="edu-sub">COMSATS Institute of Information Technology (2017 – 2021)</div>
+                <div class="edu-sub">COMSATS Institute of Information Technology, Islamabad (2017 – 2021)</div>
             </div>
             <div class="job-date">2017 – 2021</div>
         </div>
