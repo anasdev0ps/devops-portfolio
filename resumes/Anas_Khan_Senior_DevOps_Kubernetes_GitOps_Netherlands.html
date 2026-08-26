@@ -4,74 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anas Khan - Senior CI/CD DevOps Engineer Resume</title>
-    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-    
     <style>
         :root {
-            --primary: #0f172a;       /* Deep Slate */
-            --primary-dark: #020617;
-            --accent: #0066cc;        /* Executive Tech Blue */
-            --accent-light: #0284c7;  /* Cyan/Azure */
-            --text-main: #1e293b;     /* High contrast body text */
-            --text-muted: #334155;    /* Secondary text */
-            --text-light: #64748b;    /* Metadata / dates */
-            --border: #cbd5e1;        /* Crisp border */
-            --border-light: #e2e8f0;
-            --bg-page: #f1f5f9;
-            --bg-card: #ffffff;
-            --bg-subtle: #f8fafc;
-            --bg-pill: #f1f5f9;
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #0078d4;
+            --accent-dark: #005a9e;
+            --accent-cyan: #0284c7;
+            --accent-emerald: #059669;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --border-color: #e2e8f0;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --tag-bg: #f1f5f9;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-page);
-            color: var(--text-main);
-            line-height: 1.55;
-            padding: 2.5rem 1rem;
-            font-size: 14px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.5;
+            padding: 2rem 1rem;
         }
 
-        .resume-wrapper {
-            max-width: 860px;
+        .resume-container {
+            max-width: 920px;
             margin: 0 auto;
-            background: var(--bg-card);
-            border-radius: 8px;
-            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-            padding: 3.2rem 3.5rem;
-            border: 1px solid var(--border-light);
+            background: var(--bg-white);
+            border-radius: 10px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+            position: relative;
+            border: 1px solid var(--border-color);
         }
 
-        /* Top Action Toolbar */
         .top-toolbar {
             display: flex;
             justify-content: flex-end;
             gap: 0.75rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .action-btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.45rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-subtle);
-            border: 1px solid var(--border);
+            gap: 0.4rem;
+            padding: 0.45rem 0.9rem;
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
             border-radius: 6px;
             font-size: 0.82rem;
             font-weight: 600;
@@ -87,179 +83,170 @@
             border-color: var(--accent);
         }
 
-        /* Header */
-        header {
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 1.2rem;
-            margin-bottom: 1.4rem;
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
         }
 
-        .header-title-block {
-            margin-bottom: 0.6rem;
-        }
-
-        h1 {
-            font-size: 2.15rem;
+        .name-title h1 {
+            font-size: 2.25rem;
             font-weight: 800;
             color: var(--primary);
             letter-spacing: -0.03em;
-            line-height: 1.15;
+            line-height: 1.1;
             margin-bottom: 0.3rem;
             text-transform: uppercase;
         }
 
-        .role-title {
-            font-size: 1.05rem;
-            font-weight: 700;
+        .name-title .role {
+            font-size: 1.12rem;
+            font-weight: 600;
             color: var(--accent);
             letter-spacing: -0.01em;
+            margin-bottom: 0.85rem;
         }
 
-        /* Symmetrical Contact Bar */
-        .contact-ribbon {
+        .contact-bar {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 0.4rem 0.85rem;
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-light);
+            justify-content: center;
+            gap: 0.6rem 1.1rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
             border-radius: 6px;
-            padding: 0.5rem 0.85rem;
-            margin-bottom: 1rem;
-            font-size: 0.83rem;
+            padding: 0.55rem 0.9rem;
+            margin-bottom: 1.15rem;
         }
 
-        .contact-link {
+        .contact-item {
             display: inline-flex;
             align-items: center;
             gap: 0.45rem;
-            color: var(--text-muted);
             text-decoration: none;
+            color: var(--text-muted);
             font-weight: 500;
-            transition: color 0.15s ease;
+            transition: color 0.2s ease;
         }
 
-        .contact-link:hover {
+        .contact-item:hover {
             color: var(--accent);
         }
 
-        .contact-link i {
+        .contact-item i {
             color: var(--accent);
             font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
         }
 
-        .contact-divider {
-            color: var(--border);
-            font-weight: 700;
+        .contact-sep {
+            color: #cbd5e1;
+            font-weight: bold;
         }
 
         .summary-text {
-            font-size: 0.91rem;
+            font-size: 0.93rem;
             color: var(--text-muted);
-            line-height: 1.55;
-            text-align: justify;
+            line-height: 1.6;
         }
 
-        /* Sections */
-        section {
-            margin-bottom: 1.5rem;
+        .section {
+            margin-bottom: 2rem;
         }
 
-        section:last-child {
+        .section:last-child {
             margin-bottom: 0;
         }
 
-        .section-heading {
-            font-size: 0.98rem;
-            font-weight: 800;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-bottom: 1.5px solid var(--border);
-            padding-bottom: 0.3rem;
-            margin-bottom: 0.95rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            break-after: avoid;
-            page-break-after: avoid;
-        }
-
-        .section-heading i {
-            color: var(--accent);
-            font-size: 0.92rem;
-        }
-
-        /* Skills Matrix */
-        .skills-table {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.65rem;
-            margin-bottom: 0.5rem;
-            break-inside: avoid;
-            page-break-inside: avoid;
-        }
-
-        .skill-cell {
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            border-radius: 6px;
-            padding: 0.6rem 0.8rem;
-        }
-
-        .skill-cell-title {
-            font-size: 0.78rem;
+        .section-title {
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 0.03em;
-            margin-bottom: 0.35rem;
+            letter-spacing: 0.06em;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+        }
+
+        .section-title i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        /* Skills Matrix */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-group {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+        }
+
+        .skill-group-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.4rem;
             display: flex;
             align-items: center;
             gap: 0.4rem;
         }
 
-        .skill-cell-title i {
-            color: var(--accent-light);
-            font-size: 0.82rem;
+        .skill-group-title i {
+            color: var(--accent-cyan);
         }
 
-        .skill-tags {
+        .skill-pills {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.3rem;
+            gap: 0.35rem;
         }
 
-        .skill-tag {
+        .skill-pill {
             display: inline-flex;
             align-items: center;
             gap: 0.3rem;
             background: #ffffff;
-            border: 1px solid var(--border);
-            padding: 0.15rem 0.42rem;
+            border: 1px solid #cbd5e1;
+            padding: 0.18rem 0.5rem;
             border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--text-main);
+            font-size: 0.76rem;
+            font-weight: 500;
+            color: var(--text-dark);
             font-family: 'JetBrains Mono', monospace;
         }
 
-        .skill-tag i {
-            font-size: 0.78rem;
+        .skill-pill i {
+            font-size: 0.82rem;
         }
 
-        /* Experience */
-        .experience-item {
-            margin-bottom: 1.35rem;
-            break-inside: avoid;
-            page-break-inside: avoid;
+        /* Timeline / Experience */
+        .job-item {
+            margin-bottom: 1.75rem;
+            position: relative;
         }
 
-        .experience-item:last-child {
+        .job-item:last-child {
             margin-bottom: 0;
         }
 
-        .exp-header {
+        .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -268,172 +255,146 @@
             gap: 0.5rem;
         }
 
-        .exp-role-company {
-            font-size: 0.98rem;
+        .job-role {
+            font-size: 1.05rem;
+            font-weight: 700;
             color: var(--primary);
         }
 
-        .exp-role {
-            font-weight: 700;
-        }
-
-        .exp-company {
+        .job-company {
             font-weight: 600;
             color: var(--accent);
         }
 
-        .exp-meta {
-            font-size: 0.78rem;
+        .job-date {
+            font-size: 0.82rem;
             font-weight: 600;
             color: var(--text-light);
             font-family: 'JetBrains Mono', monospace;
-            background: var(--bg-pill);
+            background: var(--tag-bg);
             padding: 0.15rem 0.5rem;
             border-radius: 4px;
-            border: 1px solid var(--border-light);
         }
 
-        .bullet-list {
-            list-style: none;
-            padding-left: 0;
+        .job-bullets {
+            list-style-type: none;
+            margin-top: 0.5rem;
         }
 
-        .bullet-list li {
+        .job-bullets li {
             position: relative;
-            padding-left: 1.15rem;
-            margin-bottom: 0.35rem;
-            font-size: 0.88rem;
+            padding-left: 1.2rem;
+            margin-bottom: 0.45rem;
+            font-size: 0.9rem;
             color: var(--text-muted);
-            line-height: 1.5;
+            line-height: 1.55;
         }
 
-        .bullet-list li::before {
-            content: "▪";
+        .job-bullets li::before {
+            content: "•";
             position: absolute;
-            left: 0.1rem;
+            left: 0.2rem;
             color: var(--accent);
-            font-size: 0.82rem;
-            line-height: 1.5;
+            font-weight: bold;
+            font-size: 1.1rem;
+            line-height: 1.2;
         }
 
-        .bullet-list strong {
+        .job-bullets strong {
             color: var(--primary);
-            font-weight: 600;
         }
 
-        /* Education */
-        .edu-row {
+        .edu-item {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
             gap: 0.5rem;
-            break-inside: avoid;
-            page-break-inside: avoid;
         }
 
-        .edu-degree {
-            font-size: 0.94rem;
+        .edu-title {
+            font-size: 0.98rem;
             font-weight: 700;
             color: var(--primary);
         }
 
-        .edu-institution {
-            font-size: 0.86rem;
+        .edu-sub {
+            font-size: 0.88rem;
             color: var(--text-muted);
         }
 
-        /* STRICT PAGED MEDIA RULES (Zero touching, proper breathing room on Page 1 & Page 2) */
-        @page {
-            size: A4 portrait;
-            margin: 12mm 14mm 14mm 14mm;
-        }
-
+        /* Print Media Styles */
         @media print {
-            html, body {
+            body {
                 background: #ffffff !important;
                 padding: 0 !important;
-                margin: 0 !important;
-                font-size: 9.3pt !important;
                 color: #000000 !important;
-                width: 100% !important;
             }
 
-            .resume-wrapper {
+            .resume-container {
                 box-shadow: none !important;
                 border: none !important;
                 padding: 0 !important;
-                margin: 0 !important;
                 max-width: 100% !important;
-                border-radius: 0 !important;
             }
 
             .top-toolbar {
                 display: none !important;
             }
 
-            .contact-ribbon {
+            .contact-bar {
                 background: #f8fafc !important;
                 border: 1px solid #e2e8f0 !important;
-                padding: 0.35rem 0.6rem !important;
             }
 
-            .skills-table {
-                gap: 0.4rem !important;
+            .section {
+                page-break-inside: auto;
             }
 
-            .skill-cell {
-                padding: 0.35rem 0.55rem !important;
+            .job-item {
+                page-break-inside: avoid;
             }
 
-            section {
-                margin-bottom: 1.1rem !important;
+            .skill-group {
+                page-break-inside: avoid;
             }
+        }
 
-            .experience-item {
-                margin-bottom: 0.85rem !important;
-                break-inside: avoid !important;
-                page-break-inside: avoid !important;
-            }
-
-            .skills-table {
-                break-inside: avoid !important;
-                page-break-inside: avoid !important;
-            }
+        @page {
+            size: A4;
+            margin: 14mm 15mm 14mm 15mm;
         }
     </style>
 </head>
 <body>
 
-<div class="resume-wrapper">
-    <!-- Action Toolbar (Hidden during print) -->
+<div class="resume-container">
     <div class="top-toolbar">
-        <button class="action-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save PDF</button>
+        <button class="action-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Resume</button>
         <a href="../pdf/Anas_Khan_Senior_DevOps_Kubernetes_GitOps_Netherlands.pdf" class="action-btn" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
         <a href="../index.html" class="action-btn"><i class="fa-solid fa-arrow-left"></i> Portfolio Hub</a>
     </div>
 
-    <!-- Header Section -->
-    <header>
-        <div class="header-title-block">
+    <header class="header">
+        <div class="name-title">
             <h1>Anas Khan</h1>
-            <div class="role-title">Senior CI/CD DevOps Engineer &bull; Kubernetes, OpenShift & GitOps Specialist</div>
+            <div class="role">Senior CI/CD DevOps Engineer | Kubernetes, OpenShift & GitOps Specialist</div>
         </div>
 
-                <div class="contact-ribbon">
-            <a href="mailto:anas.devops@hotmail.com" class="contact-link">
+        <div class="contact-bar">
+            <a href="mailto:anas.devops@hotmail.com" class="contact-item">
                 <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
             </a>
-            <span class="contact-divider">&bull;</span>
-            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-link">
+            <span class="contact-sep">&bull;</span>
+            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-item">
                 <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
             </a>
-            <span class="contact-divider">&bull;</span>
-            <span class="contact-link">
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
                 <i class="fa-solid fa-phone"></i> +92 317 694 7473
             </span>
-            <span class="contact-divider">&bull;</span>
-            <span class="contact-link">
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
                 <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
             </span>
         </div>
@@ -443,85 +404,83 @@
         </p>
     </header>
 
-    <!-- Core Technical Skills -->
-    <section>
-        <h2 class="section-heading"><i class="fa-solid fa-microchip"></i> Core Competencies & Technical Skills</h2>
-        <div class="skills-table">
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-cubes"></i> Kubernetes, OpenShift & Containers</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes (AKS / Multi-Node)</span>
-                    <span class="skill-tag"><i class="devicon-redhat-plain"></i> Red Hat OpenShift</span>
-                    <span class="skill-tag"><i class="devicon-docker-plain"></i> Docker / Compose</span>
-                    <span class="skill-tag"><i class="devicon-helm-original"></i> Helm Charts</span>
-                    <span class="skill-tag"><i class="fa-solid fa-terminal"></i> K9s / Containerd</span>
+    <!-- Technical Skills -->
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Core Competencies & Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-cubes"></i> Kubernetes, OpenShift & Containers</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-kubernetes-plain"></i> Kubernetes (AKS / Multi-Node)</span>
+                    <span class="skill-pill"><i class="devicon-redhat-plain"></i> Red Hat OpenShift</span>
+                    <span class="skill-pill"><i class="devicon-docker-plain"></i> Docker / Compose</span>
+                    <span class="skill-pill"><i class="devicon-helm-original"></i> Helm Charts</span>
+                    <span class="skill-pill"><i class="fa-solid fa-terminal"></i> K9s / Containerd</span>
                 </div>
             </div>
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-code-branch"></i> GitOps & CI/CD Pipelines</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="devicon-argocd-plain"></i> ArgoCD GitOps</span>
-                    <span class="skill-tag">Flux CD</span>
-                    <span class="skill-tag"><i class="devicon-gitlab-plain"></i> GitLab CI/CD</span>
-                    <span class="skill-tag"><i class="devicon-azure-plain"></i> Azure DevOps</span>
-                    <span class="skill-tag"><i class="devicon-jenkins-line"></i> Jenkins</span>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-code-branch"></i> GitOps & CI/CD Pipelines</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-argocd-plain"></i> ArgoCD GitOps</span>
+                    <span class="skill-pill">Flux CD</span>
+                    <span class="skill-pill"><i class="devicon-gitlab-plain"></i> GitLab CI/CD</span>
+                    <span class="skill-pill"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                    <span class="skill-pill"><i class="devicon-jenkins-line"></i> Jenkins</span>
                 </div>
             </div>
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-gears"></i> IaC & Automation</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="devicon-ansible-plain"></i> Ansible Roles/Playbooks</span>
-                    <span class="skill-tag"><i class="devicon-terraform-plain"></i> Terraform</span>
-                    <span class="skill-tag"><i class="devicon-bash-plain"></i> Bash Scripting</span>
-                    <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
-                    <span class="skill-tag"><i class="devicon-git-plain"></i> Git Flow</span>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-gears"></i> IaC & Automation</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-ansible-plain"></i> Ansible Roles/Playbooks</span>
+                    <span class="skill-pill"><i class="devicon-terraform-plain"></i> Terraform</span>
+                    <span class="skill-pill"><i class="devicon-bash-plain"></i> Bash Scripting</span>
+                    <span class="skill-pill"><i class="devicon-python-plain"></i> Python</span>
+                    <span class="skill-pill"><i class="devicon-git-plain"></i> Git Flow</span>
                 </div>
             </div>
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-database"></i> Database Operators & Storage</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> CloudNativePG Operator</span>
-                    <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL (Patroni)</span>
-                    <span class="skill-tag"><i class="devicon-mysql-plain"></i> MariaDB Galera</span>
-                    <span class="skill-tag"><i class="devicon-redis-plain"></i> Redis</span>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-database"></i> Database Operators & Storage</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> CloudNativePG Operator</span>
+                    <span class="skill-pill"><i class="devicon-postgresql-plain"></i> PostgreSQL (Patroni)</span>
+                    <span class="skill-pill"><i class="devicon-mysql-plain"></i> MariaDB Galera</span>
+                    <span class="skill-pill"><i class="devicon-redis-plain"></i> Redis</span>
                 </div>
             </div>
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-chart-line"></i> Observability, SRE & Telemetry</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="devicon-prometheus-original"></i> Prometheus</span>
-                    <span class="skill-tag"><i class="devicon-grafana-plain"></i> Grafana</span>
-                    <span class="skill-tag"><i class="fa-solid fa-bell"></i> Alertmanager</span>
-                    <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> ELK Stack</span>
-                    <span class="skill-tag">Azure Monitor</span>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-chart-line"></i> Observability & SRE</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                    <span class="skill-pill"><i class="devicon-grafana-plain"></i> Grafana</span>
+                    <span class="skill-pill">Alertmanager</span>
+                    <span class="skill-pill">ELK Stack</span>
                 </div>
             </div>
-            <div class="skill-cell">
-                <div class="skill-cell-title"><i class="fa-solid fa-cloud"></i> Multi-Cloud & Networking</div>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="devicon-azure-plain"></i> Microsoft Azure</span>
-                    <span class="skill-tag"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
-                    <span class="skill-tag"><i class="devicon-googlecloud-plain"></i> GCP</span>
-                    <span class="skill-tag">Ingress (Nginx/Traefik)</span>
-                    <span class="skill-tag">Network Policies</span>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-cloud"></i> Multi-Cloud & Networking</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-azure-plain"></i> Microsoft Azure</span>
+                    <span class="skill-pill"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                    <span class="skill-pill"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                    <span class="skill-pill">Ingress (Nginx/Traefik)</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Professional Experience -->
-    <section>
-        <h2 class="section-heading"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
 
         <!-- IBHC.ai -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">Senior DevOps & Azure Cloud Engineer</span> &bull; <span class="exp-company">IBHC.ai (Inception AI)</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Senior DevOps & Azure Cloud Engineer</span> &bull; <span class="job-company">IBHC.ai (Inception AI)</span>
                 </div>
-                <span class="exp-meta">Sep 2025 – Present &bull; Remote / Hybrid</span>
+                <span class="job-date">Sep 2025 – Present &bull; Remote / Hybrid</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li>Architect and operate enterprise CI/CD and container delivery pipelines for high-profile government and commercial platforms (<strong>DGE-Mawaheb</strong>, <strong>Takafo</strong>, <strong>Muqabla</strong>).</li>
                 <li>Engineered multi-stage <strong>Azure DevOps</strong> and <strong>GitHub Actions</strong> CI/CD workflows with automated Docker container builds, environment validation gates, and zero-downtime rollback controls, shipping releases in under 10 minutes.</li>
                 <li>Designed High-Level Architecture (HLD) with secure network isolation, Kubernetes services, Private Endpoints, Redis caching, and Azure Key Vault integration.</li>
@@ -530,14 +489,14 @@
         </div>
 
         <!-- Aslase -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">Senior DevOps Engineer</span> &bull; <span class="exp-company">Aslase</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Senior DevOps Engineer</span> &bull; <span class="job-company">Aslase</span>
                 </div>
-                <span class="exp-meta">Jul 2025 – Present &bull; Hybrid</span>
+                <span class="job-date">Jul 2025 – Present &bull; Hybrid</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li>Lead DevOps automation, Kubernetes container orchestration, and continuous delivery for 8+ commercial platforms.</li>
                 <li>Automated CI/CD delivery workflows for microservices using Docker and multi-stage pipelines, <strong>reducing release cycle times by 40%</strong>.</li>
                 <li>Managed containerized MLOps and API workloads for high-throughput AI platforms, maintaining a strict <strong>99.9% uptime SLA</strong>.</li>
@@ -546,14 +505,14 @@
         </div>
 
         <!-- Technonies -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">On-Premise & Cloud Infrastructure Engineer</span> &bull; <span class="exp-company">Technonies</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">On-Premise & Cloud Infrastructure Engineer</span> &bull; <span class="job-company">Technonies</span>
                 </div>
-                <span class="exp-meta">Mar 2022 – Oct 2024 &bull; Remote</span>
+                <span class="job-date">Mar 2022 – Oct 2024 &bull; Remote</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li><strong>Kubernetes & GitOps:</strong> Automated Kubernetes cluster provisioning on Hetzner Cloud using <strong>ArgoCD GitOps</strong>, <strong>reducing deployment times from 4 hours to under 20 minutes</strong>.</li>
                 <li><strong>Cloud-Native Database Operators:</strong> Deployed and managed Kubernetes operators including <strong>CloudNativePG</strong> and MariaDB operator; architected zero-downtime Patroni PostgreSQL and Galera MariaDB clusters sustaining <strong>99.95% database availability</strong>.</li>
                 <li><strong>Infrastructure as Code:</strong> Authored modular <strong>Ansible playbooks</strong> automating multi-node Kubernetes cluster bootstrapping, OS hardening, and automated Prometheus/Grafana monitoring rollouts across 15+ nodes.</li>
@@ -562,14 +521,14 @@
         </div>
 
         <!-- Vizzn Inc -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">DevOps & GCP Engineer</span> &bull; <span class="exp-company">Vizzn Inc</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">DevOps & GCP Engineer</span> &bull; <span class="job-company">Vizzn Inc</span>
                 </div>
-                <span class="exp-meta">Aug 2023 – Feb 2025 &bull; Remote (Canada)</span>
+                <span class="job-date">Aug 2023 – Feb 2025 &bull; Remote (Canada)</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li>Modernized legacy monolithic architectures to containerized microservices on modern Ubuntu and GCP infrastructure, <strong>improving system throughput by 50%</strong>.</li>
                 <li>Optimized 8+ CI/CD pipelines, <strong>cutting pipeline execution runtimes from 18 to 7 minutes</strong>; automated integration test suites and compliance controls.</li>
                 <li>Administered GCP monitoring and distributed database upgrades with zero downtime.</li>
@@ -577,14 +536,14 @@
         </div>
 
         <!-- THINK Surgical -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">Infrastructure & VMware DevOps Engineer</span> &bull; <span class="exp-company">THINK Surgical</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Infrastructure & VMware DevOps Engineer</span> &bull; <span class="job-company">THINK Surgical</span>
                 </div>
-                <span class="exp-meta">Feb 2023 – Dec 2023 &bull; Remote (USA)</span>
+                <span class="job-date">Feb 2023 – Dec 2023 &bull; Remote (USA)</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li>Administered VMware ESXi physical hypervisor infrastructure and containerized engineering environments across 20+ virtual nodes.</li>
                 <li>Automated host provisioning with Ansible, <strong>reducing deployment setup times from 3 hours to 15 minutes</strong>.</li>
                 <li>Managed continuous build integrations on TeamCity with zero pipeline disruption.</li>
@@ -592,14 +551,14 @@
         </div>
 
         <!-- Code Informatics -->
-        <div class="experience-item">
-            <div class="exp-header">
-                <div class="exp-role-company">
-                    <span class="exp-role">DevOps & Azure Engineer</span> &bull; <span class="exp-company">Code Informatics</span>
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">DevOps & Azure Engineer</span> &bull; <span class="job-company">Code Informatics</span>
                 </div>
-                <span class="exp-meta">Feb 2021 – May 2022 &bull; Remote</span>
+                <span class="job-date">Feb 2021 – May 2022 &bull; Remote</span>
             </div>
-            <ul class="bullet-list">
+            <ul class="job-bullets">
                 <li>Designed end-to-end CI/CD delivery pipelines using <strong>Jenkins</strong> and <strong>GitLab</strong>, automating build, containerization, and deployment stages.</li>
                 <li>Dockerized 5+ enterprise applications and established centralized ELK Stack observability.</li>
             </ul>
@@ -607,16 +566,16 @@
     </section>
 
     <!-- Education -->
-    <section>
-        <h2 class="section-heading"><i class="fa-solid fa-graduation-cap"></i> Education & Academic Research</h2>
-        <div class="edu-row">
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education & Academic Research</h2>
+        <div class="edu-item">
             <div>
-                <div class="edu-degree">BS in Software Engineering</div>
-                <div class="edu-institution">COMSATS Institute of Information Technology, Islamabad (2017 – 2021)</div>
+                <div class="edu-title">BS in Software Engineering</div>
+                <div class="edu-sub">COMSATS Institute of Information Technology, Islamabad</div>
             </div>
-            <div class="exp-meta">2017 – 2021</div>
+            <div class="job-date">2017 – 2021</div>
         </div>
-        <ul class="bullet-list" style="margin-top: 0.4rem;">
+        <ul class="job-bullets" style="margin-top: 0.4rem;">
             <li><strong>Final Year Project:</strong> Dual-Axis Automated Solar Tracking Optimization System.</li>
         </ul>
     </section>
