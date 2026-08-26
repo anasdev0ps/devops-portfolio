@@ -1,0 +1,73 @@
+# Anas
+**Senior Azure Cloud Engineer | DevOps & SRE | Microsoft Entra Administration**  
+Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Multi-Region / Remote
+
+---
+
+## Professional Summary
+Senior DevOps & Azure Cloud Engineer with 5+ years of experience designing, securing, and operating enterprise-grade cloud infrastructure across Microsoft Azure, AWS, and GCP. Proven track record leading hybrid-cloud migrations, building multi-stage Azure DevOps and GitHub Actions CI/CD pipelines, managing Kubernetes workloads, and enforcing zero-trust security architectures across multi-client government and commercial environments. Deep expertise in Microsoft Entra ID (Azure AD), Azure Landing Zones, automated SOC2 compliance with AzureProof, and 24/7 site reliability engineering (SRE).
+
+---
+
+## Core Technical Skills
+- **Microsoft Azure Architecture:** Azure Landing Zones, Virtual Networks (VNet), NSGs, Application Gateway, Azure Firewall, Azure Front Door, AKS, App Services, Azure Functions, Azure Key Vault, Microsoft Defender for Cloud, Microsoft Sentinel
+- **Identity, Access & Governance:** Microsoft Entra ID (Azure AD), Conditional Access Policies, Privileged Identity Management (PIM), Managed Identities, RBAC, Zero-Trust Architecture
+- **Multi-Cloud & Virtualization:** Microsoft Azure (Primary), Amazon Web Services (AWS), Google Cloud Platform (GCP), Hetzner Cloud, VMware ESXi, Proxmox VE, Bare Metal
+- **CI/CD & GitOps Automation:** Azure DevOps Pipelines, GitHub Actions, ArgoCD (GitOps), AWS CodePipeline, Jenkins, TeamCity
+- **Infrastructure as Code (IaC):** Terraform, Ansible, ARM Templates, Bicep, Rundeck
+- **Containers & Orchestration:** Kubernetes (AKS, K3s), Docker, Docker Compose, K9s CLI, Kubernetes Operators (CloudNativePG, MariaDB-Operator)
+- **Monitoring, Observability & SRE:** Azure Monitor, Log Analytics Workspaces, Application Insights, Prometheus & Grafana, ELK Stack, Zabbix, Alertmanager
+- **Security & Compliance:** SOC2 Compliance Automation (AzureProof, DRATA), AWS WAF, Arctic Wolf Agent, FDA 21 CFR Part 11 Validation (SVP/SVR), SonarQube, FreeIPA
+- **Databases & High Availability:** PostgreSQL (Patroni, pgpool, CloudNativePG), MariaDB (Galera Cluster), MySQL, Dgraph, MongoDB
+- **Scripting & Automation:** PowerShell, Bash, Python, YAML, Groovy
+
+---
+
+## Professional Experience
+
+### **Senior DevOps & Azure Cloud Engineer** | IBHC.ai (Inception AI)
+*Jul 2025 – Present | Abu Dhabi, UAE (Remote)*
+- Own end-to-end Azure cloud infrastructure for the IBHC.ai enterprise platform, managing multi-subscription environments with Entra ID governance, Conditional Access policies, PIM, and granular RBAC across dev, staging, and production.
+- Deployed and operate the DGE-Mawaheb demo environment as a Docker Compose service on Azure VMs, establishing fully automated GitHub Actions CI/CD pipelines releasing updates in under 10 minutes per commit.
+- Architected enterprise Azure DevOps pipelines for the DGE-Mawaheb UAE government initiative, featuring multi-stage build, automated testing, environment-gated approvals, and instant rollback strategies.
+- Implemented centralized full-stack telemetry using Azure Monitor, Log Analytics, and Application Insights, slashing Mean Time to Resolution (MTTR) by 60% via proactive alerting rules.
+- Enforced continuous SOC2-aligned security posture via AzureProof (automated live Azure configuration scanner against control matrices), reducing audit preparation overhead from days to hours.
+
+### **Senior DevOps & Azure Engineer** | Aslase
+*Jul 2025 – Present | Hybrid*
+- Deployed and manage 8+ enterprise client platforms on Microsoft Azure, shortening release cycles by 40% using automated GitHub Actions CI/CD pipelines and Docker Compose on Azure VMs.
+- Engineered production AWS deployment for `resthero.io` (AWS Amplify + Elastic Beanstalk), automated releases with AWS CodePipeline, and enforced perimeter security with AWS WAF, decreasing manual deployment effort by 70%.
+- Manage MLOps infrastructure and containerized inference servers for 3 high-profile AI platforms: `aslaschat.ai`, `qudra-tech.ai`, and the `takafo` sovereign AI initiative (Cognit & Mubadala partnership), maintaining 99.9% uptime SLAs.
+- Led complete zero-downtime decommissioning and Azure migration of `core42app` and `mineralenergy.ae` from legacy cPanel environments within a strict 2-week window.
+
+### **DevOps & GCP Engineer** | Vizzn Inc
+*Aug 2023 – Feb 2025 | Remote (Canada)*
+- Spearheaded the modernization and migration of the core 'Borger' enterprise application to modern Ubuntu cloud servers, boosting system performance by 50% and eliminating recurring downtime.
+- Administered GCP Cloud Monitoring and Logging suites across 5+ distributed microservices; led Dgraph major version upgrade with zero data loss within a 30-minute maintenance window.
+- Optimized 8+ GitHub Actions CI/CD pipelines, dropping average runtime from 18 to 7 minutes; executed full DRATA automated compliance test suites for SOC2 readiness.
+
+### **On-Premise & Cloud Infrastructure Engineer** | Technonies
+*Mar 2022 – Oct 2024 | Remote*
+- Automated Kubernetes cluster deployments on Hetzner Cloud using ArgoCD GitOps, compressing cluster provisioning time from 4 hours to under 20 minutes.
+- Engineered zero-downtime MariaDB Galera and high-availability PostgreSQL (Patroni + pgpool) database clusters, sustaining 99.95% production database availability.
+- Authored modular Ansible playbooks automating Kubernetes bootstrap and monitoring stack deployments across 15+ nodes; utilized Proxmox VE locally for sandbox validation.
+- Deployed bare-metal enterprise services: 50+ agent Vicidial call center cluster, FreeIPA identity management, Frappe ERPNext, and Postfix/Dovecot mail infrastructure.
+
+### **Infrastructure & VMware DevOps Engineer** | THINK Surgical
+*Feb 2023 – Dec 2023 | Remote (USA)*
+- Administered VMware ESXi physical hypervisor infrastructure, managing VM lifecycles, compute/memory allocations, and snapshot policies across 20+ VMs for medical robotics R&D.
+- Deployed multi-user JupyterHub platform for engineering data analysis; automated host configuration via Ansible, cutting server setup times from 3 hours to 15 minutes.
+- Integrated Arctic Wolf Agent for 24/7 security threat monitoring; executed full TeamCity CI server migration with 100% build pipeline retention.
+- Authored Software Validation Protocols (SVP) and Verification Reports (SVR) satisfying FDA 21 CFR Part 11 medical software compliance.
+
+### **DevOps & Azure Engineer** | Code Informatics
+*Feb 2021 – May 2022 | Remote*
+- Established organizational DevOps frameworks; built Jenkins pipelines, containerized 5+ applications with Docker, and deployed ELK Stack for real-time log analytics.
+- Directed end-to-end Azure cloud provisioning and CI/CD automation for new product launches, accelerating deployment cycles from 2 days to under 1 hour.
+
+---
+
+## Education & Academic Research
+- **BS in Software Engineering** | COMSATS Institute of Information Technology (2017 – 2021)
+  - *Final Year Project:* Dual-Axis Automated Solar Tracking Optimization System
+  - *Research Thesis:* Hypothesis-Driven Empirical Statistical Research for BZU University

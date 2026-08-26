@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Khan | Senior DevOps & Multi-Cloud Infrastructure Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Pro / Free Icons for pure brand logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <style>
+        :root {
+            --bg-primary: #0a0f1d;
+            --bg-secondary: #111827;
+            --bg-card: #161f33;
+            --bg-card-hover: #1e293b;
+            --border-color: #24324d;
+            --border-highlight: #3b82f6;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #2563eb;
+            --accent-azure: #0078d4;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --badge-bg: rgba(37, 99, 235, 0.12);
+            --badge-border: rgba(37, 99, 235, 0.3);
+            --badge-text: #60a5fa;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0.95) 0%, rgba(10, 15, 29, 0.8) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 3rem 1.5rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1000px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(6, 182, 212, 0.05) 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .role-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            border-radius: 9999px;
+            color: var(--badge-text);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 860px;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.75rem;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item:hover {
+            color: #60a5fa;
+        }
+
+        .contact-item i {
+            color: var(--accent-cyan);
+            font-size: 1rem;
+        }
+
+        .tech-pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            max-width: 1020px;
+            margin-top: 0.5rem;
+        }
+
+        .tech-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.35rem 0.75rem;
+            background: rgba(22, 31, 51, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: #cbd5e1;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.2s ease;
+        }
+
+        .tech-pill:hover {
+            border-color: var(--border-highlight);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .tech-pill i {
+            font-size: 0.95rem;
+        }
+
+        main {
+            flex: 1;
+            padding: 3.5rem 0 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .section-title i {
+            color: var(--accent-blue);
+        }
+
+        .section-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .card.featured {
+            border-color: var(--accent-azure);
+            background: linear-gradient(180deg, rgba(22, 31, 51, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+            box-shadow: 0 0 20px rgba(0, 120, 212, 0.15);
+        }
+
+        .card:hover {
+            border-color: var(--border-highlight);
+            background-color: var(--bg-card-hover);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .card-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-cyan);
+            margin-bottom: 0.75rem;
+        }
+
+        .card-tag.gold {
+            color: #38bdf8;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            line-height: 1.55;
+            flex: 1;
+        }
+
+        .card-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-skill-badge {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+            border-radius: 4px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-family: 'JetBrains Mono', monospace;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .card-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.65rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            padding: 0.65rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-blue);
+            color: #ffffff;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #e2e8f0;
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: #475569;
+            color: #ffffff;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            background-color: var(--bg-secondary);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="role-badge">
+                <i class="fa-solid fa-server"></i> Multi-Cloud Infrastructure & DevSecOps
+            </div>
+            <h1>Anas Khan</h1>
+            <p class="tagline">Senior DevOps / DevSecOps & Multi-Cloud Infrastructure Engineer specializing in Azure, AWS, GCP, Kubernetes, Terraform & GitOps Automation</p>
+            
+            <div class="contact-bar">
+                <a href="mailto:anas.devops@hotmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
+                </a>
+                <span style="color: var(--border-color);">|</span>
+                <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-item">
+                    <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
+                </a>
+                <span style="color: var(--border-color);">|</span>
+                <span class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i> Multi-Region / Remote & Hybrid
+                </span>
+            </div>
+
+            <div class="tech-pill-container">
+                <span class="tech-pill"><i class="devicon-azure-plain"></i> Azure Landing Zones</span>
+                <span class="tech-pill"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                <span class="tech-pill"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                <span class="tech-pill"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                <span class="tech-pill"><i class="devicon-terraform-plain"></i> Terraform</span>
+                <span class="tech-pill"><i class="devicon-docker-plain"></i> Docker</span>
+                <span class="tech-pill"><i class="devicon-argocd-plain"></i> ArgoCD</span>
+                <span class="tech-pill"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                <span class="tech-pill"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                <span class="tech-pill"><i class="fa-solid fa-shield-halved"></i> Entra ID (PIM/Zero-Trust)</span>
+                <span class="tech-pill"><i class="devicon-ansible-plain"></i> Ansible</span>
+                <span class="tech-pill"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                <span class="tech-pill"><i class="devicon-grafana-plain"></i> Grafana</span>
+                <span class="tech-pill"><i class="fa-solid fa-chart-pie"></i> Azure Monitor / SRE</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title"><i class="fa-solid fa-id-card-clip"></i> Resume Profiles & Tailored Showcase</h2>
+                <p class="section-subtitle">Interactive web resumes, downloadable PDFs, and source markdown versions</p>
+            </div>
+        </div>
+
+        <div class="grid" id="resume-grid">
+            <!-- CV 5 Card (Flagship Current Resume) -->
+            <div class="card featured">
+                <div>
+                    <div class="card-tag gold"><i class="fa-solid fa-star"></i> Current Flagship Master (CV #5)</div>
+                    <h3 class="card-title">Lead Azure Cloud Engineer & SRE</h3>
+                    <p class="card-desc">Current production master resume highlighting UAE Gov DGE-Mawaheb HLD architecture (GPU VMs, Private Endpoints, Redis), IBHC.ai multi-subscription SRE (60% MTTR cut), AzureProof SOC 2 automation, and Aslase multi-client platform management.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure HLD</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-shield-halved"></i> Entra ID</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-chart-line"></i> SRE</span>
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-microchip"></i> GPU VMs</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-check-double"></i> AzureProof SOC 2</span>
+                        <span class="card-skill-badge"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> AKS</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_Lead_Azure_DevOps_Cloud_Engineer.html" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_Lead_Azure_DevOps_Cloud_Engineer.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+
+            <!-- CV 4 Card (Azure Cloud Architect & Entra Lead) -->
+            <div class="card">
+                <div>
+                    <div class="card-tag"><i class="devicon-azure-plain"></i> Azure Architect & Entra Lead (CV #4)</div>
+                    <h3 class="card-title">Senior Azure Cloud Engineer & Architect</h3>
+                    <p class="card-desc">Comprehensive executive Azure architecture profile featuring Microsoft Entra ID governance, Conditional Access, PIM, Azure Landing Zones, AzureProof SOC 2 compliance automation, and UAE government multi-stage Azure DevOps delivery.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-shield-halved"></i> Entra ID</span>
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                        <span class="card-skill-badge"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-check-double"></i> AzureProof</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> AKS</span>
+                        <span class="card-skill-badge"><i class="devicon-terraform-plain"></i> Terraform</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-chart-line"></i> SRE</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_Senior_Azure_Cloud_Architect.html" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_Senior_Azure_Cloud_Architect.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+
+            <!-- CV 3 Card (Azure Cloud & SRE Specialist) -->
+            <div class="card">
+                <div>
+                    <div class="card-tag"><i class="devicon-azure-plain"></i> Azure Cloud & SRE Lead (CV #3)</div>
+                    <h3 class="card-title">Senior Azure Cloud Engineer & SRE</h3>
+                    <p class="card-desc">Specialized enterprise Azure profile focusing on Entra ID governance, Conditional Access, PIM, Azure Landing Zones, Azure DevOps, AzureProof SOC 2 automation, and 60% MTTR reduction across UAE government & commercial AI platforms.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-shield-halved"></i> Entra ID</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-chart-line"></i> SRE</span>
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+                        <span class="card-skill-badge"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> AKS</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-check-double"></i> AzureProof</span>
+                        <span class="card-skill-badge"><i class="devicon-terraform-plain"></i> Terraform</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_Senior_Azure_DevOps_SRE.html" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_Senior_Azure_DevOps_SRE.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+
+            <!-- CV 2 Card (Senior Multi-Cloud & AI) -->
+            <div class="card">
+                <div>
+                    <div class="card-tag"><i class="fa-solid fa-cloud-bolt"></i> Multi-Cloud & AI Lead (CV #2)</div>
+                    <h3 class="card-title">Senior DevOps & Multi-Cloud Infrastructure Engineer</h3>
+                    <p class="card-desc">Advanced enterprise profile highlighting multi-cloud engineering (AWS Amplify/Beanstalk, Azure Portal Consolidation, GCP), AI/MLOps platforms (AslasChat, Qudra, Takafo), AWS WAF, Arctic Wolf, and hybrid cloud migrations.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                        <span class="card-skill-badge"><i class="devicon-jupyter-plain"></i> MLOps</span>
+                        <span class="card-skill-badge"><i class="fa-solid fa-shield-halved"></i> AWS WAF</span>
+                        <span class="card-skill-badge"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                        <span class="card-skill-badge"><i class="devicon-argocd-plain"></i> ArgoCD</span>
+                        <span class="card-skill-badge"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_Senior_DevOps_Cloud_Engineer.html" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_Senior_DevOps_Cloud_Engineer.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+
+            <!-- CV 1 Card (Foundation) -->
+            <div class="card">
+                <div>
+                    <div class="card-tag"><i class="fa-solid fa-layer-group"></i> Foundation Profile (CV #1)</div>
+                    <h3 class="card-title">DevOps & Linux Systems Engineer</h3>
+                    <p class="card-desc">Core DevOps foundation profile emphasizing Linux systems administration, Kubernetes GitOps with ArgoCD, CloudNativePG operator migrations, GCP/Azure migrations, Jenkins, and full-stack observability.</p>
+                    
+                    <div class="card-skills">
+                        <span class="card-skill-badge"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                        <span class="card-skill-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                        <span class="card-skill-badge"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                        <span class="card-skill-badge"><i class="devicon-argocd-plain"></i> ArgoCD</span>
+                        <span class="card-skill-badge"><i class="devicon-ansible-plain"></i> Ansible</span>
+                        <span class="card-skill-badge"><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                        <span class="card-skill-badge"><i class="devicon-postgresql-plain"></i> CloudNativePG</span>
+                        <span class="card-skill-badge"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="resumes/Anas_DevOps_Engineer_Foundation.html" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View HTML</a>
+                    <a href="pdf/Anas_DevOps_Engineer_Foundation.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Anas Khan &bull; Senior DevOps & Multi-Cloud Infrastructure Engineer &bull; <a href="mailto:anas.devops@hotmail.com">anas.devops@hotmail.com</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
