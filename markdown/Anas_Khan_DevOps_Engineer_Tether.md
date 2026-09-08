@@ -5,7 +5,7 @@ Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 31
 ---
 
 ## Professional Summary
-DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containerizing applications, and maintaining Linux infrastructure. Hands-on experience building automated build and release workflows with **GitHub Actions**, managing **Docker** containers, maintaining **C++ (CMake)** builds, and packaging **JavaScript/TypeScript** applications. Pragmatic approach to Infrastructure as Code (Terraform, Ansible), system reliability, and cross-platform application releases.
+DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containerizing applications, and maintaining Linux infrastructure. Hands-on experience building automated build and release workflows with **GitHub Actions**, managing **Docker** containers, maintaining **C++ (CMake)** builds, and packaging **JavaScript/TypeScript** applications. Proven background delivering secure, reliable infrastructure for enterprise projects including UAE Government initiatives (**DGE-Mawaheb**), commercial AI platforms (**Takafo**, **Muqabla**), and medical robotics software.
 
 ---
 
@@ -21,27 +21,29 @@ DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containe
 
 ## Work Experience
 
-### **DevOps Engineer** | IBHC.ai
+### **DevOps Engineer** | IBHC.ai (Inception AI)
 *Sep 2025 – Present | Remote*
-- Built and maintained GitHub Actions pipelines to automate builds, testing, and deployments, cutting release times to under 10 minutes.
+- Built and managed GitHub Actions and Azure DevOps pipelines for production platforms including **DGE-Mawaheb (UAE Government)**, **Takafo**, **Muqabla**, and **RestHero**, keeping release times under 10 minutes.
+- Set up automated testing, container security checks, and deployment gates to catch bugs before code reached staging or production.
 - Rebuilt Docker images with multi-stage builds and layer caching, reducing image sizes by 65% and speeding up pipeline runs.
-- Automated server and cloud environment provisioning using Terraform and Ansible across dev, staging, and production.
-- Monitored application health and server performance using Prometheus and Grafana dashboards, resolving production alerts promptly.
-- Worked closely with developers to debug pipeline failures, dependency issues, and deployment bottlenecks.
+- Wrote modular Terraform and Ansible scripts to provision and manage cloud infrastructure across development, staging, and production environments.
+- Monitored services with Prometheus and Grafana dashboards, resolving production alerts and maintaining 99.9% uptime for Takafo.
+- Supported SOC 2 compliance readiness using AzureProof to run automated checks against live infrastructure configurations.
 
 ### **DevOps & Infrastructure Engineer** | Aslase
 *Jul 2025 – Present | Remote*
+- Handled CI/CD pipelines, Docker environments, and server operations for client platforms including **ASMS (Skyworth USA)**, **Black Door Limo**, and **Humentra.ai**.
 - Automated build, test, and release workflows for TypeScript and Node.js packages to internal registries with automated version tagging.
 - Managed Docker Compose setups on Linux servers, configured Nginx reverse proxies, and automated SSL certificate renewals.
-- Set up tag-triggered GitHub release workflows to automate application artifact distribution.
+- Set up tag-triggered GitHub release workflows to automate cross-platform application artifact distribution.
 - Handled routine Linux server maintenance, security patches, and application monitoring to maintain 99.9% uptime.
 
 ### **DevOps & Systems Engineer** | THINK Surgical
 *Feb 2023 – Dec 2023 | Remote*
-- Maintained native C++ build pipelines using CMake, GCC, and Clang on Linux test environments.
+- Maintained native C++ build pipelines using CMake, GCC, and Clang on Linux test environments for surgical robotics software.
 - Automated test execution and binary artifact packaging as part of continuous integration runs.
 - Wrote Ansible playbooks to configure Linux test machines and VMware virtual machines, reducing setup time from hours to minutes.
-- Documented build configurations, environment setups, and release steps for the engineering team.
+- Maintained software verification protocols (SVP/SVR) aligned with FDA 21 CFR Part 11 requirements for mission-critical medical systems.
 
 ### **Infrastructure & Linux Engineer** | Technonies
 *Mar 2022 – Oct 2024 | Remote*
