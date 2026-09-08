@@ -1,7 +1,6 @@
 # Anas Khan
 **Senior DevOps Engineer | CI/CD Automation (GitHub Actions), Docker, CMake/C++, JS/TS & Cross-Platform Release Engineering**  
-Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 317 694 7473 | Lahore, Pakistan (100% Remote Ready)  
-LinkedIn: [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops) | GitHub: [github.com/anasdev0ps](https://github.com/anasdev0ps)
+Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 317 694 7473 | LinkedIn: [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops) | Lahore, Pakistan
 
 ---
 
