@@ -15,7 +15,7 @@ DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containe
 - **Infrastructure as Code:** Terraform, Ansible, Bash Scripting, Python
 - **Linux & Systems:** Ubuntu, Debian, RHEL, Systemd, TCP/IP, DNS, Firewalls (iptables/UFW), Site-to-Site VPNs
 - **Monitoring & Telemetry:** Prometheus, Grafana, ELK Stack, Alertmanager, Log Analysis
-- **Cloud & Orchestration:** AWS, Azure, Kubernetes basics (AKS/K3s), Nginx, SSL/TLS
+- **Cloud & Orchestration:** AWS, Azure, Kubernetes (AKS / K3s, Helm), Nginx, SSL/TLS
 
 ---
 
