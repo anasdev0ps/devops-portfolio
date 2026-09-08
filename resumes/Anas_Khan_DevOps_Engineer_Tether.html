@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Khan - DevOps Engineer (Tether) Resume</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #0078d4;
+            --accent-dark: #005a9e;
+            --accent-cyan: #0284c7;
+            --accent-emerald: #059669;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --border-color: #e2e8f0;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --tag-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .resume-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            border-radius: 10px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+
+        .top-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 0.9rem;
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .name-title h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+        }
+
+        .name-title .role {
+            font-size: 1.12rem;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: -0.01em;
+            margin-bottom: 0.85rem;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem 1.1rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.55rem 0.9rem;
+            margin-bottom: 1.15rem;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--accent);
+        }
+
+        .contact-item i {
+            color: var(--accent);
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .contact-sep {
+            color: #cbd5e1;
+            font-weight: bold;
+        }
+
+        .summary-text {
+            font-size: 0.93rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+        }
+
+        .section-title i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        /* Skills Matrix */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-group {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+        }
+
+        .skill-group-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .skill-group-title i {
+            color: var(--accent-cyan);
+        }
+
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+        }
+
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 0.18rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.76rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .skill-pill i {
+            font-size: 0.82rem;
+        }
+
+        /* Timeline / Experience */
+        .job-item {
+            margin-bottom: 1.75rem;
+            position: relative;
+        }
+
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .job-role {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .job-date {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-light);
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--tag-bg);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .job-bullets {
+            list-style-type: none;
+            margin-top: 0.5rem;
+        }
+
+        .job-bullets li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.45rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        .job-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0.2rem;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            line-height: 1.2;
+        }
+
+        .job-bullets strong {
+            color: var(--primary);
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .edu-title {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .edu-sub {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background: #ffffff !important;
+                padding: 0 !important;
+                color: #000000 !important;
+            }
+
+            .resume-container {
+                box-shadow: none !important;
+                border: none !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+
+            .top-toolbar {
+                display: none !important;
+            }
+
+            .contact-bar {
+                background: #f8fafc !important;
+                border: 1px solid #e2e8f0 !important;
+            }
+
+            .section {
+                page-break-inside: auto;
+            }
+
+            .job-item {
+                page-break-inside: avoid;
+            }
+
+            .skill-group {
+                page-break-inside: avoid;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 14mm 15mm 14mm 15mm;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="top-toolbar">
+        <button class="action-btn" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Resume</button>
+        <a href="../pdf/Anas_Khan_DevOps_Engineer_Tether.pdf" class="action-btn" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+        <a href="../index.html" class="action-btn"><i class="fa-solid fa-arrow-left"></i> Portfolio Hub</a>
+    </div>
+
+    <header class="header">
+        <div class="name-title">
+            <h1>Anas Khan</h1>
+            <div class="role">Senior DevOps Engineer | CI/CD (GitHub Actions), Docker, CMake/C++, JS/TS & Release Engineering</div>
+        </div>
+
+        <div class="contact-bar">
+            <a href="mailto:anas.devops@hotmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i> anas.devops@hotmail.com
+            </a>
+            <span class="contact-sep">&bull;</span>
+            <a href="https://linkedin.com/in/devanasops" target="_blank" class="contact-item">
+                <i class="devicon-linkedin-plain"></i> linkedin.com/in/devanasops
+            </a>
+            <span class="contact-sep">&bull;</span>
+            <a href="https://github.com/anasdev0ps" target="_blank" class="contact-item">
+                <i class="devicon-github-original"></i> github.com/anasdev0ps
+            </a>
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
+                <i class="fa-solid fa-phone"></i> +92 317 694 7473
+            </span>
+            <span class="contact-sep">&bull;</span>
+            <span class="contact-item">
+                <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan (100% Remote)
+            </span>
+        </div>
+
+        <p class="summary-text">
+            Results-driven Senior DevOps Engineer with 5+ years of hands-on experience architecting scalable CI/CD delivery pipelines using <strong>GitHub Actions</strong>, test-driven deployment (TDD), multi-language build automation, and Infrastructure as Code (IaC). Proven track record orchestrating build, package, and release lifecycles across <strong>C++ (CMake)</strong>, <strong>JavaScript/TypeScript (NPM registries)</strong>, and cross-platform desktop/mobile distributions. Expert in Docker containerization, multi-stage image optimization, Linux systems administration, networking, and high-availability zero-trust infrastructure across cloud and distributed environments. Experienced supporting security-sensitive fintech, sovereign AI, and high-throughput microservices.
+        </p>
+    </header>
+
+    <!-- Technical Skills -->
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Core Competencies & Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-code-branch"></i> CI/CD & Release Engineering</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-githubactions-plain"></i> GitHub Actions (Reusable / Matrix)</span>
+                    <span class="skill-pill">Test-Driven Deployment (TDD)</span>
+                    <span class="skill-pill">Semantic Versioning (SemVer)</span>
+                    <span class="skill-pill">Artifact Signing & Tagging</span>
+                    <span class="skill-pill">Mobile/Desktop Release Automation</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="devicon-cplusplus-plain"></i> Multi-Language Build Systems</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-cmake-plain"></i> CMake & Native Toolchains</span>
+                    <span class="skill-pill">C++ Compilation & Linkage</span>
+                    <span class="skill-pill"><i class="devicon-nodejs-plain"></i> Node.js & TypeScript</span>
+                    <span class="skill-pill"><i class="devicon-npm-original-wordmark"></i> NPM / Registry Workflows</span>
+                    <span class="skill-pill">Cross-Platform Builds</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="devicon-docker-plain"></i> Containers & Microservices</div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Docker (Multi-Stage Builds)</span>
+                    <span class="skill-pill">Layer Caching & Optimization</span>
+                    <span class="skill-pill">GHCR / Docker Hub / ACR</span>
+                    <span class="skill-pill"><i class="devicon-kubernetes-plain"></i> Kubernetes (AKS / K3s)</span>
+                    <span class="skill-pill">Container Hardening</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-gears"></i> Infrastructure as Code & Scripting</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-terraform-plain"></i> Terraform</span>
+                    <span class="skill-pill"><i class="devicon-ansible-plain"></i> Ansible Roles/Playbooks</span>
+                    <span class="skill-pill"><i class="devicon-bash-plain"></i> Bash Scripting</span>
+                    <span class="skill-pill"><i class="devicon-python-plain"></i> Python Automation</span>
+                    <span class="skill-pill">AWS CloudFormation</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="devicon-linux-plain"></i> Linux Systems & Networking</div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Ubuntu / Debian / RHEL</span>
+                    <span class="skill-pill">Kernel Tuning & Storage</span>
+                    <span class="skill-pill">TCP/IP, DNS, Routing</span>
+                    <span class="skill-pill">Firewalls (iptables/UFW)</span>
+                    <span class="skill-pill">Site-to-Site IPsec VPNs</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title"><i class="fa-solid fa-chart-line"></i> Observability, SRE & Security</div>
+                <div class="skill-pills">
+                    <span class="skill-pill"><i class="devicon-prometheus-original"></i> Prometheus</span>
+                    <span class="skill-pill"><i class="devicon-grafana-plain"></i> Grafana Dashboards</span>
+                    <span class="skill-pill">ELK Stack (Logging)</span>
+                    <span class="skill-pill">Shift-Left SAST/DAST</span>
+                    <span class="skill-pill">SOC 2 (AzureProof Automation)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
+
+        <!-- IBHC.ai -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Senior DevOps & Cloud Engineer</span> &bull; <span class="job-company">IBHC.ai (Inception AI)</span>
+                </div>
+                <span class="job-date">Sep 2025 – Present &bull; Remote / Hybrid</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Architect and manage end-to-end multi-stage <strong>GitHub Actions</strong> and Azure DevOps CI/CD delivery pipelines for distributed enterprise platforms (<strong>DGE-Mawaheb</strong>, <strong>Takafo</strong>, <strong>Muqabla</strong>, and <strong>RestHero</strong>).</li>
+                <li>Implemented test-driven deployment (TDD) pipelines with automated unit testing, integration gates, and container security scanning, shipping verified releases in under 10 minutes.</li>
+                <li>Optimized Docker container builds utilizing multi-stage Dockerfiles and layer caching, <strong>cutting image sizes by 65% and build durations by 50%</strong>.</li>
+                <li>Automated cloud infrastructure provisioning via modular <strong>Terraform</strong> and <strong>Ansible</strong> playbooks, guaranteeing reproducible isolated environments (Dev, Staging, Production, DR).</li>
+                <li>Embedded automated security compliance validation using <strong>AzureProof</strong>, scanning live configurations against zero-trust standards and cutting SOC 2 audit preparation from days to hours.</li>
+                <li>Unified production telemetry with Prometheus, Grafana, and Log Analytics, <strong>reducing incident MTTR by 60%</strong> across high-throughput services.</li>
+            </ul>
+        </div>
+
+        <!-- Aslase -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Senior DevOps & Infrastructure Engineer</span> &bull; <span class="job-company">Aslase</span>
+                </div>
+                <span class="job-date">Jul 2025 – Present &bull; Remote / Hybrid</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Built automated continuous integration and delivery pipelines for microservices and AI workloads, <strong>reducing release cycle times by 40%</strong>.</li>
+                <li>Managed JavaScript/TypeScript build, linting, packaging, and versioning pipelines, ensuring seamless automated distribution to internal package registries and NPM workflows.</li>
+                <li>Maintained Docker Compose and containerized production environments, reverse proxies (Nginx), and automated SSL/TLS certificate lifecycles, maintaining a <strong>99.9% uptime SLA</strong>.</li>
+                <li>Standardized cross-platform application release workflows, including artifact verification, automated semantic tagging, and tag-triggered deployment pipelines.</li>
+            </ul>
+        </div>
+
+        <!-- THINK Surgical -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">Infrastructure & Systems DevOps Engineer</span> &bull; <span class="job-company">THINK Surgical</span>
+                </div>
+                <span class="job-date">Feb 2023 – Dec 2023 &bull; Remote (USA)</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Engineered and maintained <strong>C++ native build pipelines using CMake</strong> and GCC/Clang toolchains for surgical robotics engineering software.</li>
+                <li>Automated multi-target compilation, unit testing, and artifact distribution across Linux environments.</li>
+                <li>Provisioned physical VMware hypervisors and Linux virtual machines using modular <strong>Ansible playbooks</strong>, <strong>slashing environment setup times from 3 hours to 15 minutes</strong>.</li>
+                <li>Authored Software Validation Protocols (SVP) and Verification Reports (SVR) satisfying FDA 21 CFR Part 11 regulatory standards for mission-critical software.</li>
+            </ul>
+        </div>
+
+        <!-- Technonies -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">On-Premise & Cloud Infrastructure Engineer</span> &bull; <span class="job-company">Technonies</span>
+                </div>
+                <span class="job-date">Mar 2022 – Oct 2024 &bull; Remote</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Automated multi-node Kubernetes cluster bootstrapping and GitOps workflows on Hetzner Cloud, <strong>cutting cluster deployment from 4 hours to under 20 minutes</strong>.</li>
+                <li>Engineered zero-downtime high-availability database clusters (<strong>PostgreSQL Patroni</strong> & <strong>MariaDB Galera</strong>), achieving <strong>99.95% database availability</strong>.</li>
+                <li>Configured Linux system baselines, kernel tuning, firewall policies, and IPsec VPN connectivity across 15+ nodes using Ansible.</li>
+                <li>Administered FreeIPA centralized directory services (LDAP/Kerberos/PKI) and Asterisk VoIP clusters.</li>
+            </ul>
+        </div>
+
+        <!-- Vizzn Inc -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">DevOps & GCP Engineer</span> &bull; <span class="job-company">Vizzn Inc</span>
+                </div>
+                <span class="job-date">Aug 2023 – Feb 2025 &bull; Remote (Canada)</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Designed and optimized 8+ GitHub Actions CI/CD workflows, <strong>reducing average pipeline duration from 18 to 7 minutes</strong>.</li>
+                <li>Containerized legacy monolithic services into decoupled microservices, <strong>improving system throughput by 50%</strong>.</li>
+                <li>Managed zero-downtime distributed database migrations within 30-minute scheduled maintenance windows.</li>
+            </ul>
+        </div>
+
+        <!-- Code Informatics -->
+        <div class="job-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-role">DevOps & Software Engineer</span> &bull; <span class="job-company">Code Informatics</span>
+                </div>
+                <span class="job-date">Feb 2021 – May 2022 &bull; Remote</span>
+            </div>
+            <ul class="job-bullets">
+                <li>Established initial CI/CD automation practices using Jenkins and GitHub, containerized 5+ applications with Docker, and implemented ELK Stack monitoring.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education & Academic Research</h2>
+        <div class="edu-item">
+            <div>
+                <div class="edu-title">BS in Software Engineering</div>
+                <div class="edu-sub">COMSATS Institute of Information Technology, Islamabad</div>
+            </div>
+            <div class="job-date">2017 – 2021</div>
+        </div>
+        <ul class="job-bullets" style="margin-top: 0.4rem;">
+            <li><strong>Final Year Project:</strong> Dual-Axis Automated Solar Tracking Optimization System.</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
