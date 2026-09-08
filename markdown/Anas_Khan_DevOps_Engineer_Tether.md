@@ -10,12 +10,12 @@ DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containe
 ---
 
 ## Technical Skills
-- **CI/CD & Build Tools:** GitHub Actions, CMake, Make, GCC/Clang, NPM, Yarn, Git Flow, Semantic Versioning
-- **Containers:** Docker, Multi-Stage Dockerfiles, Layer Caching, Docker Compose, Container Registries (GHCR, Docker Hub)
-- **Infrastructure as Code:** Terraform, Ansible, Bash Scripting, Python
-- **Linux & Systems:** Ubuntu, Debian, RHEL, Systemd, TCP/IP, DNS, Firewalls (iptables/UFW), Site-to-Site VPNs
-- **Monitoring & Telemetry:** Prometheus, Grafana, ELK Stack, Alertmanager, Log Analysis
-- **Cloud & Orchestration:** AWS, Azure, Kubernetes (AKS / K3s, Helm), Nginx, SSL/TLS
+- **CI/CD & Build Engineering:** GitHub Actions, CMake, C++, TypeScript / NPM, Make, GCC/Clang, Semantic Versioning
+- **Containers & Orchestration:** Docker, Kubernetes (AKS / K3s), Helm Charts, Multi-Stage Builds, Docker Compose, GHCR
+- **Infrastructure as Code:** Terraform, Ansible, Python, Bash Scripting, Git Flow
+- **Cloud & Microservices:** AWS, Azure, Nginx Reverse Proxy, SSL/TLS, High-Availability Design
+- **Linux Systems & Network Security:** Ubuntu / Debian / RHEL, Kernel Tuning, Site-to-Site VPNs, Firewall Hardening, Network Diagnostics
+- **Observability & SRE:** Prometheus, Grafana, Alertmanager, ELK Stack, Log Telemetry
 
 ---
 
@@ -47,7 +47,7 @@ DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containe
 
 ### **Infrastructure & Linux Engineer** | Technonies
 *Mar 2022 – Oct 2024 | Remote*
-- Managed Linux servers (Ubuntu/Debian) across bare-metal and cloud environments, handling user permissions, firewalls, and network routing.
+- Maintained production Linux infrastructure across bare-metal and cloud environments, managing kernel tuning, network security, and secure VPN connectivity.
 - Automated server setup, security baselines, and routine maintenance using Bash scripts and Ansible.
 - Maintained high-availability PostgreSQL and MariaDB databases, including automated backups and replication checks.
 - Assisted with Kubernetes cluster deployments and set up system monitoring with Prometheus and Grafana.
