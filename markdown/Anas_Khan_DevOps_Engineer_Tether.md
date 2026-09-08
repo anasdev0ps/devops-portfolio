@@ -1,67 +1,66 @@
 # Anas Khan
-**DevOps Engineer**  
+**Senior DevOps & Release Engineer | CI/CD Automation (GitHub Actions), Docker, C++ (CMake) & Cross-Platform Infrastructure**  
 Email: [anas.devops@hotmail.com](mailto:anas.devops@hotmail.com) | Phone: +92 317 694 7473 | LinkedIn: [linkedin.com/in/devanasops](https://linkedin.com/in/devanasops) | Lahore, Pakistan
 
 ---
 
 ## Professional Summary
-DevOps Engineer with 5+ years of experience setting up CI/CD pipelines, containerizing applications, and maintaining Linux infrastructure. Hands-on experience building automated build and release workflows with **GitHub Actions**, managing **Docker** containers, maintaining **C++ (CMake)** builds, and packaging **JavaScript/TypeScript** applications. Proven background delivering secure, reliable infrastructure for enterprise projects including UAE Government initiatives (**DGE-Mawaheb**), commercial AI platforms (**Takafo**, **Muqabla**), and medical robotics software.
+Senior DevOps & Release Engineer with 5+ years of experience architecting automated CI/CD pipelines, containerized environments, and high-availability infrastructure across cloud and distributed platforms. Specialized in end-to-end software delivery using **GitHub Actions**, multi-language build lifecycles across **C++ (CMake)** and **JavaScript/TypeScript (NPM)**, and cross-platform releases. Proven track record engineering secure, compliant infrastructure for UAE Government initiatives (**DGE-Mawaheb**), sovereign AI platforms (**Takafo**), commercial enterprises (**ASMS / Skyworth**), and surgical robotics software. Expert in Docker container optimization, Terraform, Ansible, Linux systems engineering, and full-stack observability with Prometheus and Grafana.
 
 ---
 
-## Technical Skills
-- **CI/CD & Build Engineering:** GitHub Actions, CMake, C++, TypeScript / NPM, Make, GCC/Clang, Semantic Versioning
-- **Containers & Orchestration:** Docker, Kubernetes (AKS / K3s), Helm Charts, Multi-Stage Builds, Docker Compose, GHCR
-- **Infrastructure as Code:** Terraform, Ansible, Python, Bash Scripting, Git Flow
-- **Cloud & Microservices:** AWS, Azure, Nginx Reverse Proxy, SSL/TLS, High-Availability Design
-- **Linux Systems & Network Security:** Ubuntu / Debian / RHEL, Kernel Tuning, Site-to-Site VPNs, Firewall Hardening, Network Diagnostics
-- **Observability & SRE:** Prometheus, Grafana, Alertmanager, ELK Stack, Log Telemetry
+## Core Competencies & Technical Skills
+- **CI/CD & Release Engineering:** GitHub Actions (Reusable Workflows, Self-Hosted Runners, Matrix Builds), Test-Driven Deployment (TDD), Semantic Versioning (SemVer), Automated Artifact Signing, Cross-Platform Release Packaging
+- **Multi-Language Build Systems:** CMake, Make, GCC/Clang Toolchains (C++ Native Builds), Node.js/TypeScript Packaging, NPM Registry Workflows, Dependency Management
+- **Containers & Orchestration:** Docker (Multi-Stage Builds, Layer Caching), Container Registries (GHCR, Docker Hub), Kubernetes (AKS, K3s), Helm Charts, K9s CLI
+- **Infrastructure as Code & Automation:** Terraform (Modular Templates), Ansible Playbooks & Roles, Python Automation, Advanced Bash Scripting, Git Flow
+- **Cloud & Microservices:** Microsoft Azure, Amazon Web Services (AWS), Nginx Reverse Proxy, SSL/TLS Certificates, High-Availability System Design
+- **Linux Systems & Network Security:** Ubuntu, Debian, RHEL, Kernel Performance Tuning, IPsec Site-to-Site VPNs, Firewall Hardening (iptables/UFW), Network Diagnostics (Wireshark)
+- **Observability, SRE & Telemetry:** Prometheus, Grafana Dashboards, ELK Stack, Alertmanager, Incident Root Cause Analysis (RCA), MTTR Reduction (-60%)
 
 ---
 
-## Work Experience
+## Professional Experience
 
-### **DevOps Engineer** | IBHC.ai (Inception AI)
-*Sep 2025 – Present | Remote*
-- Built and managed GitHub Actions and Azure DevOps pipelines for production platforms including **DGE-Mawaheb (UAE Government)**, **Takafo**, **Muqabla**, and **RestHero**, keeping release times under 10 minutes.
-- Set up automated testing, container security checks, and deployment gates to catch bugs before code reached staging or production.
-- Rebuilt Docker images with multi-stage builds and layer caching, reducing image sizes by 65% and speeding up pipeline runs.
-- Wrote modular Terraform and Ansible scripts to provision and manage cloud infrastructure across development, staging, and production environments.
-- Monitored services with Prometheus and Grafana dashboards, resolving production alerts and maintaining 99.9% uptime for Takafo.
-- Supported SOC 2 compliance readiness using AzureProof to run automated checks against live infrastructure configurations.
+### **Senior DevOps & Cloud Engineer** | IBHC.ai (Inception AI)
+*Sep 2025 – Present | Remote / Hybrid*
+- Architected and managed enterprise multi-stage **GitHub Actions** and Azure DevOps CI/CD delivery pipelines for production platforms including **DGE-Mawaheb (UAE Government)**, **Takafo**, **Muqabla**, and **RestHero**, achieving sub-10 minute automated releases.
+- Implemented test-driven deployment (TDD) validation gates, container security scanning, and automated rollback controls, preventing defect leakage into staging and production.
+- Optimized Docker container builds utilizing multi-stage Dockerfiles and layer caching, **cutting image sizes by 65% and build durations by 50%**.
+- Automated cloud infrastructure provisioning via modular **Terraform** and **Ansible** scripts, ensuring reproducible isolated environments across Dev, Staging, Production, and DR.
+- Engineered full-stack telemetry using Prometheus, Grafana, and Log Analytics, **reducing incident MTTR by 60%** and sustaining a strict **99.9% uptime SLA** for Takafo sovereign AI.
+- Embedded automated security compliance scanning with **AzureProof** to validate live infrastructure configurations against SOC 2 and zero-trust controls.
 
-### **DevOps & Infrastructure Engineer** | Aslase
-*Jul 2025 – Present | Remote*
-- Handled CI/CD pipelines, Docker environments, and server operations for client platforms including **ASMS (Skyworth USA)**, **Black Door Limo**, and **Humentra.ai**.
-- Automated build, test, and release workflows for TypeScript and Node.js packages to internal registries with automated version tagging.
-- Managed Docker Compose setups on Linux servers, configured Nginx reverse proxies, and automated SSL certificate renewals.
-- Set up tag-triggered GitHub release workflows to automate cross-platform application artifact distribution.
-- Handled routine Linux server maintenance, security patches, and application monitoring to maintain 99.9% uptime.
+### **Senior DevOps & Infrastructure Engineer** | Aslase
+*Jul 2025 – Present | Remote / Hybrid*
+- Engineered automated continuous delivery and infrastructure operations for 8+ commercial platforms including **ASMS (Skyworth USA)**, **Black Door Limo**, and **Humentra.ai**, **reducing release cycle times by 40%**.
+- Built and managed automated compilation, linting, and semantic versioning workflows for TypeScript and Node.js packages to internal registries and NPM ecosystems.
+- Administered containerized Docker Compose workloads, Nginx reverse proxies, SSL/TLS certificate automation, and Linux server maintenance with zero unplanned downtime.
+- Automated cross-platform application release workflows, orchestrating tag-triggered builds, code signing, and artifact distribution.
 
-### **DevOps & Systems Engineer** | THINK Surgical
-*Feb 2023 – Dec 2023 | Remote*
-- Maintained native C++ build pipelines using CMake, GCC, and Clang on Linux test environments for surgical robotics software.
-- Automated test execution and binary artifact packaging as part of continuous integration runs.
-- Wrote Ansible playbooks to configure Linux test machines and VMware virtual machines, reducing setup time from hours to minutes.
-- Maintained software verification protocols (SVP/SVR) aligned with FDA 21 CFR Part 11 requirements for mission-critical medical systems.
+### **Infrastructure & Systems DevOps Engineer** | THINK Surgical
+*Feb 2023 – Dec 2023 | Remote (USA)*
+- Developed and maintained native **C++ build pipelines using CMake**, GCC, and Clang toolchains for surgical robotics R&D software on Linux test environments.
+- Automated continuous integration testing runs and binary artifact packaging for mission-critical software verification.
+- Automated physical VMware hypervisor and Linux VM provisioning using modular **Ansible playbooks**, **cutting environment setup times from 3 hours to 15 minutes**.
+- Authored Software Validation Protocols (SVP) and Verification Reports (SVR) satisfying FDA 21 CFR Part 11 regulatory standards.
 
-### **Infrastructure & Linux Engineer** | Technonies
+### **On-Premise & Cloud Infrastructure Engineer** | Technonies
 *Mar 2022 – Oct 2024 | Remote*
-- Maintained production Linux infrastructure across bare-metal and cloud environments, managing kernel tuning, network security, and secure VPN connectivity.
-- Automated server setup, security baselines, and routine maintenance using Bash scripts and Ansible.
-- Maintained high-availability PostgreSQL and MariaDB databases, including automated backups and replication checks.
-- Assisted with Kubernetes cluster deployments and set up system monitoring with Prometheus and Grafana.
+- Automated Kubernetes cluster deployments and GitOps workflows on Hetzner Cloud, **dropping provisioning time from 4 hours to under 20 minutes**.
+- Engineered high-availability PostgreSQL (Patroni) and MariaDB Galera database clusters, maintaining **99.95% production database availability**.
+- Administered enterprise Linux server infrastructure across 15+ bare-metal and cloud nodes, managing kernel parameters, firewall rules, and IPsec VPN connectivity via Ansible.
+- Deployed and monitored Asterisk VoIP telephony clusters and centralized FreeIPA identity management (LDAP/Kerberos/PKI).
 
-### **DevOps Engineer** | Vizzn Inc
-*Aug 2023 – Feb 2025 | Remote*
-- Maintained and optimized CI/CD workflows, reducing pipeline wait times from 18 minutes to 7 minutes.
-- Assisted in containerizing monolithic services into Docker containers running on cloud instances.
-- Monitored services, resolved deployment failures, and documented incident resolutions.
+### **DevOps & GCP Engineer** | Vizzn Inc
+*Aug 2023 – Feb 2025 | Remote (Canada)*
+- Optimized 8+ CI/CD delivery pipelines, **reducing execution times from 18 to 7 minutes** while integrating DRATA automated compliance checks for SOC 2 readiness.
+- Migrated legacy monolithic services into containerized microservices on modern Linux and cloud instances, **improving system throughput by 50%**.
+- Maintained cloud monitoring and log analytics, executing zero-downtime database upgrades within scheduled maintenance windows.
 
-### **Junior DevOps Engineer** | Code Informatics
+### **DevOps & Software Engineer** | Code Informatics
 *Feb 2021 – May 2022 | Remote*
-- Set up initial automated build and test pipelines using Jenkins and GitHub.
-- Created Dockerfiles to containerize internal tools and set up centralized logging with the ELK stack.
+- Established initial CI/CD automation practices with Jenkins and GitHub, containerized 5+ services with Docker, and implemented ELK Stack monitoring.
 
 ---
 
